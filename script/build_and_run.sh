@@ -4,11 +4,54 @@ project_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$project_dir"
 mode="${1:-run}"
 app_name="EdwardScissorhands"
-app_bundle="$project_dir/dist/Edward Scissorhands.app"
+staging_target=".build/edward-staging.noindex"
+staging_dir="$project_dir/$staging_target"
+dist_dir="$project_dir/dist"
+app_bundle="$dist_dir/Edward Scissorhands.app"
 installed_bundle="/Applications/Edward Scissorhands.app"
 contents="$app_bundle/Contents"
 
 case "$mode" in run|--verify|--build-only|--debug|--logs|--telemetry) ;; *) echo "Usage: $0 [--build-only|--verify|--debug|--logs|--telemetry]" >&2; exit 2;; esac
+# Keep the documented dist path while putting generated app bundles inside a
+# Spotlight-excluded build directory. This prevents a second app in search.
+mkdir -p "$project_dir/.build"
+if [ -L "$dist_dir" ]; then
+  [ "$(readlink "$dist_dir")" = "$staging_target" ] || { echo "Refusing to replace an unexpected dist symlink." >&2; exit 1; }
+  mkdir -p "$staging_dir"
+elif [ -e "$dist_dir" ]; then
+  [ -d "$dist_dir" ] && [ ! -e "$staging_dir" ] || { echo "Cannot safely move the existing dist folder to staging." >&2; exit 1; }
+  mv "$dist_dir" "$staging_dir"
+  if ! ln -s "$staging_target" "$dist_dir"; then
+    mv "$staging_dir" "$dist_dir"
+    echo "Could not link the dist staging folder; restored the original folder." >&2
+    exit 1
+  fi
+else
+  mkdir -p "$staging_dir"
+  ln -s "$staging_target" "$dist_dir"
+fi
+# The real package has no .app suffix, so Launch Services does not register it.
+# The documented dist path remains an app-named link for build tooling.
+staging_package="$staging_dir/Edward Scissorhands.staging"
+if [ -L "$app_bundle" ]; then
+  [ "$(readlink "$app_bundle")" = "Edward Scissorhands.staging" ] || { echo "Refusing to replace an unexpected staged app symlink." >&2; exit 1; }
+  [ ! -L "$staging_package" ] || { echo "The staging package must be a real directory." >&2; exit 1; }
+  mkdir -p "$staging_package"
+elif [ -e "$app_bundle" ]; then
+  [ -d "$app_bundle" ] && [ ! -e "$staging_package" ] || { echo "Cannot safely move the existing staged app." >&2; exit 1; }
+  lsregister="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister"
+  [ ! -x "$lsregister" ] || "$lsregister" -u "$app_bundle" >/dev/null 2>&1 || true
+  mv "$app_bundle" "$staging_package"
+  if ! ln -s 'Edward Scissorhands.staging' "$app_bundle"; then
+    mv "$staging_package" "$app_bundle"
+    echo "Could not link the staged app; restored the original bundle." >&2
+    exit 1
+  fi
+else
+  [ ! -L "$staging_package" ] || { echo "The staging package must be a real directory." >&2; exit 1; }
+  mkdir -p "$staging_package"
+  ln -s 'Edward Scissorhands.staging' "$app_bundle"
+fi
 ./scripts/media-tools.sh
 swift build --product EdwardScissorhands
 swift build --product EdwardMediaWorker

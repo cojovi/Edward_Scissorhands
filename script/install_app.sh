@@ -5,6 +5,16 @@ source_bundle="$project_dir/dist/Edward Scissorhands.app"
 installed_bundle="/Applications/Edward Scissorhands.app"
 bundle_id="com.edwardscissorhands.studio"
 
+# New builds keep the app-named staging path as a link to a non-app package.
+# Only accept the exact project-owned links; never install an arbitrary target.
+if [ -L "$source_bundle" ]; then
+  [ -L "$project_dir/dist" ] && [ "$(readlink "$project_dir/dist")" = '.build/edward-staging.noindex' ] && \
+    [ "$(readlink "$source_bundle")" = 'Edward Scissorhands.staging' ] || {
+      echo "Refusing an unexpected staging symlink." >&2; exit 1;
+    }
+  source_bundle="$project_dir/.build/edward-staging.noindex/Edward Scissorhands.staging"
+fi
+
 check_bundle() {
   local candidate="$1"
   [ -d "$candidate" ] && [ ! -L "$candidate" ] || { echo "Expected a real app bundle: $candidate" >&2; return 1; }

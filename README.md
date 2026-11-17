@@ -10,7 +10,7 @@ Requires an Apple Silicon Mac, macOS 14+, and Xcode's Swift toolchain to build. 
 ./script/build_and_run.sh
 ```
 
-The canonical app is `/Applications/Edward Scissorhands.app`. This script and the Codex **Run** action build, install or update that copy, and launch it. `dist/Edward Scissorhands.app` is generated staging output.
+The canonical app is `/Applications/Edward Scissorhands.app`. This script and the Codex **Run** action build, install or update that copy, and launch it. `dist/Edward Scissorhands.app` is a link to generated staging output in an unindexed build folder, so macOS does not show it as a second app.
 
 `--build-only` also installs or updates the canonical app but does not launch it; `--verify` checks launch; `--debug`, `--logs`, and `--telemetry` support debugging. To install an already packaged `dist` bundle without rebuilding:
 
