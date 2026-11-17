@@ -1,4 +1,5 @@
 import SwiftUI
+import AppKit
 
 enum Studio {
     static let background = Color(hex: "030706")
@@ -41,12 +42,19 @@ struct Eyebrow: View {
     var color: Color = Studio.muted
     var body: some View { Text(text.uppercased()).font(Studio.mono(10)).tracking(2).foregroundStyle(color) }
 }
-struct ScissorMark: View {
+struct BrandMark: View {
     var size: CGFloat = 38
+    private static let logo: NSImage? = {
+        guard let url = Bundle.module.url(forResource: "EdwardLogo", withExtension: "png") else { return nil }
+        return NSImage(contentsOf: url)
+    }()
     var body: some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: size * 0.24).fill(Studio.green)
-            Image(systemName: "scissors").font(.system(size: size * 0.57, weight: .bold)).rotationEffect(.degrees(-28)).foregroundStyle(Studio.background)
+        Group {
+            if let logo = Self.logo {
+                Image(nsImage: logo).resizable().interpolation(.high).scaledToFit()
+            } else {
+                Image(systemName: "exclamationmark.triangle").foregroundStyle(Studio.amber)
+            }
         }.frame(width: size, height: size).accessibilityHidden(true)
     }
 }

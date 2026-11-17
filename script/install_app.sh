@@ -49,4 +49,10 @@ trap cleanup EXIT
 check_bundle "$install_stage/Edward Scissorhands.app"
 if [ -d "$installed_bundle" ]; then /bin/mv "$installed_bundle" "$install_stage/previous.app"; fi
 /bin/mv "$install_stage/Edward Scissorhands.app" "$installed_bundle"
+# Refresh this app's cached icon and leave the generated staging path unregistered.
+lsregister="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister"
+if [ -x "$lsregister" ]; then
+  "$lsregister" -u "$project_dir/dist/Edward Scissorhands.app" >/dev/null 2>&1 || true
+  "$lsregister" -f "$installed_bundle" >/dev/null 2>&1 || true
+fi
 echo "Installed: $installed_bundle"

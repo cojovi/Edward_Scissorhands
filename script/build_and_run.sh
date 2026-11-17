@@ -70,9 +70,23 @@ for resource in "$binary_dir"/*.bundle; do
   # The isolated command-line worker resolves resources relative to its executable.
   cp -R "$resource" "$contents/Resources/bin/"
 done
-if [ ! -f "$contents/Resources/AppIcon.icns" ]; then
-  swift script/make_icon.swift "$project_dir/.build/Edward.iconset"
-  iconutil -c icns "$project_dir/.build/Edward.iconset" -o "$contents/Resources/AppIcon.icns"
+# Rebuild the icon from the same artwork used in the interface, including on updates.
+swift script/make_icon.swift "$project_dir/Sources/EdwardApp/Resources/EdwardLogo.png" "$project_dir/.build/Edward.iconset"
+iconutil -c icns "$project_dir/.build/Edward.iconset" -o "$contents/Resources/AppIcon.icns"
+# Xcode 26+ can package the same artwork in the modern icon format, avoiding
+# macOS's generic gray backing. Older toolchains retain the .icns fallback.
+xcode_major="$(xcodebuild -version | awk '/^Xcode / { split($2, v, "."); print v[1]; exit }')"
+if [ "${xcode_major:-0}" -ge 26 ]; then
+  icon_project="$project_dir/.build/AppIcon.icon"
+  icon_output="$project_dir/.build/EdwardIconAssets"
+  mkdir -p "$icon_project/Assets" "$icon_output"
+  cp script/EdwardBrand.icon.json "$icon_project/icon.json"
+  cp "$project_dir/.build/Edward.iconset/icon_512x512@2x.png" "$icon_project/Assets/EdwardLogo.png"
+  xcrun actool --compile "$icon_output" --platform macosx --minimum-deployment-target 14.0 \
+    --app-icon AppIcon --output-partial-info-plist "$project_dir/.build/EdwardIconInfo.plist" "$icon_project" > "$project_dir/.build/EdwardIconBuild.log" 2>&1
+  cp "$icon_output/Assets.car" "$contents/Resources/Assets.car"
+else
+  rm -f "$contents/Resources/Assets.car"
 fi
 cat > "$contents/Info.plist" <<'PLIST'
 <?xml version="1.0" encoding="UTF-8"?>
@@ -89,6 +103,7 @@ cat > "$contents/Info.plist" <<'PLIST'
 <key>NSPrincipalClass</key><string>NSApplication</string>
 <key>NSHighResolutionCapable</key><true/>
 <key>CFBundleIconFile</key><string>AppIcon</string>
+<key>CFBundleIconName</key><string>AppIcon</string>
 <key>NSHumanReadableCopyright</key><string>Edward Scissorhands — Personal Studio</string>
 </dict></plist>
 PLIST

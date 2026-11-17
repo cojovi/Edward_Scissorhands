@@ -21,7 +21,7 @@ let package = Package(
         .target(name: "EdwardProviders", dependencies: ["EdwardDomain"]),
         .target(name: "EdwardPersistence", dependencies: ["EdwardDomain", "CSQLite"]),
         .target(name: "EdwardJobs", dependencies: ["EdwardDomain", "EdwardMedia", "EdwardProviders", "EdwardPersistence"]),
-        .executableTarget(name: "EdwardApp", dependencies: ["EdwardDomain", "EdwardMedia", "EdwardProviders", "EdwardPersistence", "EdwardJobs"]),
+        .executableTarget(name: "EdwardApp", dependencies: ["EdwardDomain", "EdwardMedia", "EdwardProviders", "EdwardPersistence", "EdwardJobs"], resources: [.process("Resources")]),
         .testTarget(name: "EdwardTests", dependencies: ["EdwardDomain", "EdwardMedia", "EdwardProviders", "EdwardPersistence", "EdwardJobs"]),
     ],
     swiftLanguageModes: [.v5]

@@ -22,6 +22,8 @@ Let active batches finish before relaunching. Updates preserve Application Suppo
 
 The build downloads checksum-pinned yt-dlp and QuickJS from their official releases. Swift dependencies are locked by `Package.resolved`.
 
+The shared app artwork lives in `Sources/EdwardApp/Resources/EdwardLogo.png`. The build generates the macOS app icon from that image, including a modern icon catalog with Xcode 26 or later; the sidebar, welcome screen and clip placeholders use the same artwork.
+
 ## First batch
 
 1. Open **AI connections**. Select OpenAI, Anthropic, Gemini, a compatible endpoint, or Ollama. Choose a model and save a key in Keychain where required; local Ollama needs no key. **Test connection & list models** performs discovery, not paid inference. Add separate profiles to use different models or keys for different stages.

@@ -323,7 +323,7 @@ struct WelcomeSheet: View {
     @ObservedObject var model: WorkspaceModel
     var body: some View {
         VStack(alignment: .leading, spacing: 24) {
-            ScissorMark(size: 52)
+            BrandMark(size: 64)
             Eyebrow(text: "Welcome to your private studio", color: Studio.green)
             Text("Every great story\nhas a sharper cut.").font(.system(size: 36, weight: .semibold, design: .rounded)).tracking(-1)
             VStack(alignment: .leading, spacing: 20) {

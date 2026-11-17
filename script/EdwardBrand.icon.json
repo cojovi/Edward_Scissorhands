@@ -1,0 +1,18 @@
+{
+  "fill": {"solid": "srgb:0.01176,0.02745,0.02353,1.00000"},
+  "groups": [
+    {
+      "layers": [
+        {
+          "image-name": "EdwardLogo.png",
+          "name": "Edward Logo",
+          "glass": false,
+          "position": {"scale": 1, "translation-in-points": [0, 0]}
+        }
+      ],
+      "translucency": {"enabled": false, "value": 1},
+      "specular": false
+    }
+  ],
+  "supported-platforms": {"squares": "shared"}
+}

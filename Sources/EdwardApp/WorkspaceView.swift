@@ -100,7 +100,7 @@ struct LoadedWorkspace: View {
     private var sidebar: some View {
         VStack(alignment: .leading, spacing: 0) {
             HStack(spacing: 11) {
-                ScissorMark()
+                BrandMark(size: 44)
                 VStack(alignment: .leading, spacing: 3) { Text("EDWARD").font(.system(size: 15, weight: .black)).tracking(2); Text("SCISSORHANDS").font(Studio.mono(8)).tracking(2.1).foregroundStyle(Studio.muted) }
             }.padding(.top, 26).padding(.bottom, 38).padding(.horizontal, 22)
             Eyebrow(text: "Workspace").padding(.horizontal, 24).padding(.bottom, 14)
@@ -252,7 +252,11 @@ struct LoadedWorkspace: View {
                             model.selectedClipID = clip.id; model.showEditor = true
                         } label: {
                             VStack(alignment: .leading, spacing: 10) {
-                                ZStack { RoundedRectangle(cornerRadius: 8).fill(Studio.background); Image(systemName: clip.outputURL == nil ? "scissors" : "play.circle").font(.system(size: 30, weight: .ultraLight)).foregroundStyle(Studio.green) }.frame(height: 90)
+                                ZStack {
+                                    RoundedRectangle(cornerRadius: 8).fill(Studio.background)
+                                    if clip.outputURL == nil { BrandMark(size: 72) }
+                                    else { Image(systemName: "play.circle").font(.system(size: 30, weight: .ultraLight)).foregroundStyle(Studio.green) }
+                                }.frame(height: 90)
                                 Text(clip.proposal.title).font(.system(size: 12, weight: .semibold)).lineLimit(2).frame(height: 32, alignment: .topLeading)
                                 HStack { Text(timecode(clip.proposal.duration)); Spacer(); Text(clip.outputURL == nil ? "PROPOSED" : "EXPORTED") }.font(Studio.mono(8)).foregroundStyle(Studio.muted)
                             }.padding(10).frame(width: 165).background(Studio.panel, in: RoundedRectangle(cornerRadius: 10))
