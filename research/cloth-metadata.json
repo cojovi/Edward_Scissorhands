@@ -1,0 +1,47 @@
+{
+  "CFBundleName": "Cloth",
+  "CFBundleIdentifier": "com.propellercrew.cloth-setapp",
+  "CFBundleExecutable": "Cloth",
+  "CFBundleShortVersionString": "0.1.0",
+  "CFBundleVersion": "12",
+  "LSMinimumSystemVersion": "14.0",
+  "CFBundleDocumentTypes": [
+    {
+      "CFBundleTypeName": "Video",
+      "CFBundleTypeRole": "Viewer",
+      "LSHandlerRank": "Alternate",
+      "LSItemContentTypes": [
+        "public.mpeg-4",
+        "com.apple.quicktime-movie",
+        "public.movie"
+      ]
+    }
+  ],
+  "MPSupportedArchitectures": [
+    "arm64",
+    "x86_64"
+  ],
+  "CFBundleURLTypes": [
+    {
+      "CFBundleURLName": "com.propellercrew.cloth-setapp",
+      "CFBundleURLSchemes": [
+        "com.propellercrew.cloth-setapp"
+      ]
+    }
+  ],
+  "MDItemKeywords": [
+    "shorts",
+    "reels",
+    "tiktok",
+    "youtube shorts",
+    "vertical video",
+    "clips",
+    "video clipper",
+    "subtitles",
+    "captions",
+    "transcribe",
+    "transcription",
+    "podcast",
+    "repurpose video"
+  ]
+}

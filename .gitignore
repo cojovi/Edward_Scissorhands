@@ -1,0 +1,19 @@
+.build/
+.swiftpm/
+.tools/
+dist/
+.DS_Store
+research/raw/
+research/cache/
+.test-artifacts/
+*.log
+
+# Local credentials and machine-specific secrets do not belong in the repository.
+.env
+.env.*
+!.env.example
+!.env.template
+*.pem
+*.p12
+*.pfx
+*.key

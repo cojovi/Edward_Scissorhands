@@ -1,0 +1,22 @@
+{
+  "rea_root": "/Volumes/FastSSD/github/clones/rea",
+  "rea_revision": "ba98130049fa40ade66b03611ff70c7ddc011a1d",
+  "rea_entries": 30106,
+  "rea_classifications": {
+    "authored-source-or-configuration": 2253,
+    "documentation-or-license": 192,
+    "generated-or-cache": 1861,
+    "vcs-internals": 58,
+    "test-or-experiment": 2111,
+    "dependency-or-third-party": 23502,
+    "website": 129
+  },
+  "cloth_file_count": 92,
+  "cloth_directory_count": 43,
+  "cloth_symlink_count": 0,
+  "limitations": [
+    "REA inventory classifies every path but does not claim semantic review of every dependency/generated file.",
+    "Cloth manifest hashes every regular file; hashing is not semantic analysis.",
+    "Secrets are excluded from the selected plist projection."
+  ]
+}

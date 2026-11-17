@@ -1,0 +1,40 @@
+{
+  "authority": "Derived static bytes using field metadata and loads in function 0x100371248; pixels inferred from 1080x1920 composition. Not verified against current platform overlays.",
+  "source_sha256": "a9bd174f25fd6cae2dddf9110f45a048f93aab60f1baac015e9a3db10a978065",
+  "native_procedure": "0x100371248",
+  "records": [
+    {
+      "address": "0x1010eb450",
+      "platform": "Instagram Reels",
+      "top": 230.0,
+      "bottom": 300.0,
+      "leading": 48.0,
+      "trailing": 176.0,
+      "crop": 48.0,
+      "measured_flag_in_binary": true,
+      "source_string_status": "Chained-fixup encoded pointer; source field not decoded in this supplemental table"
+    },
+    {
+      "address": "0x1010eb4a0",
+      "platform": "TikTok",
+      "top": 225.0,
+      "bottom": 240.0,
+      "leading": 48.0,
+      "trailing": 170.0,
+      "crop": 48.0,
+      "measured_flag_in_binary": true,
+      "source_string_status": "Chained-fixup encoded pointer; source field not decoded in this supplemental table"
+    },
+    {
+      "address": "0x1010eb4f0",
+      "platform": "YouTube Shorts",
+      "top": 190.0,
+      "bottom": 220.0,
+      "leading": 48.0,
+      "trailing": 172.0,
+      "crop": 48.0,
+      "measured_flag_in_binary": true,
+      "source_string_status": "Chained-fixup encoded pointer; source field not decoded in this supplemental table"
+    }
+  ]
+}

@@ -1,0 +1,335 @@
+{
+  "schema_version": 1,
+  "purpose": "Human-readable reconstruction checklist, not a fabricated authenticated REA obligation ledger",
+  "target": "Cloth 0.1.0 build 12",
+  "required": [
+    {
+      "id": "ingest.local",
+      "title": "Local video import",
+      "source": "Video document declarations, native AVFoundation imports",
+      "evidence_status": "static-confirmed",
+      "implementation_status": "source-mapped-not-runtime-certified",
+      "original_runtime_status": "partial",
+      "acceptance": [
+        "Read MP4/MOV and display source duration",
+        "Report unsupported or missing media without corrupting projects"
+      ],
+      "implementation_reference": "feature-implementation-map.md"
+    },
+    {
+      "id": "ingest.url",
+      "title": "Video URL acquisition",
+      "source": "yt-dlp/qjs/ffmpeg bundled; demo source.kind=link",
+      "evidence_status": "static-confirmed",
+      "implementation_status": "source-mapped-not-runtime-certified",
+      "original_runtime_status": "partial",
+      "acceptance": [
+        "Download supported URLs through an explicit subprocess boundary",
+        "Report network/site failures and cancellation"
+      ],
+      "implementation_reference": "feature-implementation-map.md"
+    },
+    {
+      "id": "transcript.words",
+      "title": "Word-timed transcript",
+      "source": "demo.json absolute source word times; runtime disclosure ElevenLabs Scribe v2",
+      "evidence_status": "static-and-ui",
+      "implementation_status": "source-mapped-not-runtime-certified",
+      "original_runtime_status": "partial",
+      "acceptance": [
+        "Preserve start/end and speaker for each word",
+        "Display/copy/export full transcript",
+        "Do not confuse source time with rendered clip time"
+      ],
+      "runtime_evidence": "runtime-observations.md",
+      "implementation_reference": "feature-implementation-map.md"
+    },
+    {
+      "id": "transcript.resilience",
+      "title": "Chunked transcription fallback",
+      "source": "Native function 0x10033cba4 checks cancellation/error cases and branches to chunked fallback",
+      "evidence_status": "native-static",
+      "implementation_status": "source-mapped-not-runtime-certified",
+      "original_runtime_status": "not-run-paid-service-unavailable",
+      "acceptance": [
+        "Chunk according to selected provider limits",
+        "Retain ordering and restore absolute timestamps",
+        "Surface unrecoverable transcription failures"
+      ],
+      "native_report": "native-findings.md",
+      "implementation_reference": "feature-implementation-map.md"
+    },
+    {
+      "id": "clips.select",
+      "title": "AI moment selection",
+      "source": "Native prompt builder 0x1002ffc1c; source-bound transcript boundary contract",
+      "evidence_status": "native-static",
+      "implementation_status": "source-mapped-not-runtime-certified",
+      "original_runtime_status": "not-run-paid-service-unavailable",
+      "acceptance": [
+        "Return bounded start/end, title, score, label, reason",
+        "Accept only timestamps tied to transcript boundaries",
+        "Favor complete standalone thoughts"
+      ],
+      "native_report": "native-findings.md",
+      "implementation_reference": "feature-implementation-map.md"
+    },
+    {
+      "id": "clips.controls",
+      "title": "Selection preferences",
+      "source": "Static fields and official feature claims",
+      "evidence_status": "static-and-ui",
+      "implementation_status": "source-mapped-not-runtime-certified",
+      "original_runtime_status": "controls-observed-processing-unverified",
+      "acceptance": [
+        "Auto or Manual mode",
+        "Count and 15\u201330, 30\u201360, 60\u201390, custom duration choices",
+        "Per-run request, input replacement, output folder"
+      ],
+      "runtime_evidence": "runtime-observations.md",
+      "implementation_reference": "feature-implementation-map.md"
+    },
+    {
+      "id": "clips.score",
+      "title": "Moment scoring/explanations",
+      "source": "demo rating fields; embedded score/label/reason prompt",
+      "evidence_status": "static-confirmed",
+      "implementation_status": "source-mapped-not-runtime-certified",
+      "original_runtime_status": "not-run-paid-service-unavailable",
+      "acceptance": [
+        "0\u2013100 score and concise explanation",
+        "Expose ranking to manual review"
+      ],
+      "implementation_reference": "feature-implementation-map.md"
+    },
+    {
+      "id": "edit.sentences",
+      "title": "Sentence removal recut",
+      "source": "Static instruction Keep at least one sentence; official feature claim",
+      "evidence_status": "static-and-ui",
+      "implementation_status": "source-mapped-not-runtime-certified",
+      "original_runtime_status": "controls-observed-processing-unverified",
+      "acceptance": [
+        "Include/exclude sentences and require one retained sentence",
+        "Per-sentence speaker assignment and global speaker swap",
+        "Re-cut enabled only after edit changes",
+        "Maintain a source-to-output time map"
+      ],
+      "runtime_evidence": "runtime-observations.md",
+      "implementation_reference": "feature-implementation-map.md"
+    },
+    {
+      "id": "edit.pauses",
+      "title": "Pause/filler removal",
+      "source": "Root observed settings toggle",
+      "evidence_status": "ui-confirmed",
+      "implementation_status": "source-mapped-not-runtime-certified",
+      "original_runtime_status": "partial",
+      "acceptance": [
+        "Optional removal of silence/filler sounds",
+        "Recompute timing for captions and framing"
+      ],
+      "runtime_evidence": "runtime-observations.md",
+      "implementation_reference": "feature-implementation-map.md"
+    },
+    {
+      "id": "speakers.diarize",
+      "title": "Local speaker segmentation",
+      "source": "Four community-1 CoreML models and static fallback log",
+      "evidence_status": "static-confirmed",
+      "implementation_status": "source-mapped-not-runtime-certified",
+      "original_runtime_status": "partial",
+      "acceptance": [
+        "Speaker intervals run locally where supported",
+        "Continue without speaker labels on a recoverable diarization failure"
+      ],
+      "implementation_reference": "feature-implementation-map.md"
+    },
+    {
+      "id": "framing.follow",
+      "title": "Speaker-follow portrait framing",
+      "source": "Native face/body/pose/landmark requests and crop functions; runtime disclosure; seats metadata",
+      "evidence_status": "native-and-ui",
+      "implementation_status": "source-mapped-not-runtime-certified",
+      "original_runtime_status": "partial",
+      "acceptance": [
+        "9:16 composition follows selected/active speaker when association is supported",
+        "Preserve useful content when association is uncertain",
+        "Allow speaker-label correction in the independent implementation"
+      ],
+      "runtime_evidence": "runtime-observations.md",
+      "native_report": "native-findings.md",
+      "intentional_difference": "Edward preserves the full frame instead of reproducing Cloth body/pose/object/hand fallback.",
+      "implementation_reference": "feature-implementation-map.md"
+    },
+    {
+      "id": "captions.render",
+      "title": "Word captions and speaker color",
+      "source": "Runtime subtitle and speaker-color toggles; static timing schema",
+      "evidence_status": "static-and-ui",
+      "implementation_status": "source-mapped-not-runtime-certified",
+      "original_runtime_status": "controls-observed-processing-unverified",
+      "acceptance": [
+        "Bottom/top/off per-run placement",
+        "Optional speaker colors",
+        "Word captions follow recut time mapping"
+      ],
+      "runtime_evidence": "runtime-observations.md",
+      "implementation_reference": "feature-implementation-map.md"
+    },
+    {
+      "id": "captions.safezones",
+      "title": "Platform-safe placement",
+      "source": "Native function 0x100371248 and recovered three-platform numeric table",
+      "evidence_status": "native-static",
+      "implementation_status": "source-mapped-not-runtime-certified",
+      "original_runtime_status": "partial",
+      "acceptance": [
+        "Account for top/bottom and asymmetric side controls in a conservative caption safe region",
+        "Verify caption bounding box against an exported frame"
+      ],
+      "native_report": "native-findings.md",
+      "implementation_reference": "feature-implementation-map.md"
+    },
+    {
+      "id": "export.media",
+      "title": "Video rendering",
+      "source": "1080x1920 native composition 0x100387c48 and Core Animation captions 0x10038969c; UI quality choices",
+      "evidence_status": "native-and-ui",
+      "implementation_status": "source-mapped-not-runtime-certified",
+      "original_runtime_status": "controls-observed-processing-unverified",
+      "acceptance": [
+        "Expose Standard/Sharp/Maximum quality choices; distinguish acquisition settings from export settings",
+        "Render source-time edits with matching captions/framing",
+        "Disk-space errors, cancellation, successful output location"
+      ],
+      "runtime_evidence": "runtime-observations.md",
+      "native_report": "native-findings.md",
+      "implementation_reference": "feature-implementation-map.md"
+    },
+    {
+      "id": "library.runs",
+      "title": "Per-run library",
+      "source": "demo schema; runtime and official feature descriptions",
+      "evidence_status": "static-and-ui",
+      "implementation_status": "source-mapped-not-runtime-certified",
+      "original_runtime_status": "controls-observed-processing-unverified",
+      "acceptance": [
+        "Rename, run again, reveal, delete run",
+        "Show run title/date/source duration/count",
+        "Expand/copy/save transcript text",
+        "Copy/open source link"
+      ],
+      "runtime_evidence": "runtime-observations.md",
+      "implementation_reference": "feature-implementation-map.md"
+    },
+    {
+      "id": "settings.output",
+      "title": "Output and completion preferences",
+      "source": "Root observed output-folder/Finder/sound controls",
+      "evidence_status": "ui-confirmed",
+      "implementation_status": "source-mapped-not-runtime-certified",
+      "original_runtime_status": "partial",
+      "acceptance": [
+        "Choose output directory",
+        "Optional Finder reveal and completion sound"
+      ],
+      "runtime_evidence": "runtime-observations.md",
+      "implementation_reference": "feature-implementation-map.md"
+    },
+    {
+      "id": "settings.prompt",
+      "title": "Standing instruction",
+      "source": "Root observed ALWAYS ASK FOR field; standingPrompt literal",
+      "evidence_status": "static-and-ui",
+      "implementation_status": "source-mapped-not-runtime-certified",
+      "original_runtime_status": "partial",
+      "acceptance": [
+        "Persist optional global instruction",
+        "Combine with per-run instruction using documented precedence"
+      ],
+      "runtime_evidence": "runtime-observations.md",
+      "implementation_reference": "feature-implementation-map.md"
+    },
+    {
+      "id": "jobs.lifecycle",
+      "title": "Progress/cancel/retry",
+      "source": "JobStage and cancellation metadata; native cancellation handling; observed run controls",
+      "evidence_status": "static-and-ui",
+      "implementation_status": "source-mapped-not-runtime-certified",
+      "original_runtime_status": "partial",
+      "acceptance": [
+        "Visible processing stages",
+        "Cancellation stops owned work",
+        "Retry preserves completed expensive stages where possible"
+      ],
+      "native_report": "native-findings.md",
+      "implementation_reference": "feature-implementation-map.md"
+    },
+    {
+      "id": "cache.reuse",
+      "title": "Transcript and curation reuse",
+      "source": "CurationMemo.Key fields and native same-transcript/settings reuse branch",
+      "evidence_status": "native-static",
+      "implementation_status": "source-mapped-not-runtime-certified",
+      "original_runtime_status": "partial",
+      "acceptance": [
+        "Cache identity includes source and relevant model/settings",
+        "Changing semantic inputs invalidates cached result"
+      ],
+      "native_report": "native-findings.md",
+      "implementation_reference": "feature-implementation-map.md"
+    },
+    {
+      "id": "diagnostics",
+      "title": "Diagnostic export",
+      "source": "Root observed UI says no keys/links/transcripts",
+      "evidence_status": "ui-confirmed",
+      "implementation_status": "source-mapped-not-runtime-certified",
+      "original_runtime_status": "partial",
+      "acceptance": [
+        "Export useful stage/error diagnostics without credentials or media content",
+        "Provide reproducible failure descriptions"
+      ],
+      "runtime_evidence": "runtime-observations.md",
+      "implementation_reference": "feature-implementation-map.md"
+    },
+    {
+      "id": "onboarding",
+      "title": "Welcome/demo",
+      "source": "Packaged onboarding media and timing JSON, runtime replay control",
+      "evidence_status": "static-and-ui",
+      "implementation_status": "source-mapped-not-runtime-certified",
+      "original_runtime_status": "partial",
+      "acceptance": [
+        "Explain ingest/analyze/review/export flow",
+        "New app uses original demonstration assets, not copied Cloth resources"
+      ],
+      "runtime_evidence": "runtime-observations.md",
+      "implementation_reference": "feature-implementation-map.md"
+    },
+    {
+      "id": "ai.independence",
+      "title": "User-selected model/providers",
+      "source": "User-required intentional difference",
+      "evidence_status": "replacement-contract",
+      "implementation_status": "source-mapped-not-runtime-certified",
+      "original_runtime_status": "partial",
+      "acceptance": [
+        "Direct user API keys and compatible models",
+        "No Setapp identity, keys, credits, or server dependency",
+        "Capability-gated routing for transcription/text/vision/video"
+      ],
+      "implementation_reference": "feature-implementation-map.md"
+    }
+  ],
+  "limitations": [
+    "Paid workflows have not run because the observed Setapp balance is zero.",
+    "No implementation is marked passed by this research inventory.",
+    "Static literals and imported libraries do not establish runtime reachability.",
+    "Implementation integration and test status belong to the root build; this research checklist does not mark source inspection as a passed test."
+  ],
+  "source_audit": "implementation-gap-audit.md",
+  "implementation_map": "feature-implementation-map.md",
+  "source_audit_status": "Reported integration findings verified resolved in source; execution results remain owned by the root build"
+}

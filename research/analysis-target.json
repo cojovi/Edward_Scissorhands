@@ -1,0 +1,7 @@
+{
+  "source": "/Applications/Setapp/Cloth.app/Contents/MacOS/Cloth",
+  "derived_path": "/Volumes/FastSSD/github/my repos/Edward_Scissorhands/research/evidence/Cloth.arm64",
+  "operation": "lipo -thin arm64",
+  "sha256": "a9bd174f25fd6cae2dddf9110f45a048f93aab60f1baac015e9a3db10a978065",
+  "reason": "REA Ghidra rejects universal Mach-O because architecture selection cannot be enforced; original is unchanged."
+}

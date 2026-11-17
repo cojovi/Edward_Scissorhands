@@ -1,0 +1,2104 @@
+{
+  "authority": "Derived from Swift nominal type/field metadata in the hashed arm64 slice; not original source; property runtime behavior unverified",
+  "source_sha256": "a9bd174f25fd6cae2dddf9110f45a048f93aab60f1baac015e9a3db10a978065",
+  "layout_references": [
+    "https://github.com/swiftlang/swift/blob/main/include/swift/RemoteInspection/Records.h",
+    "https://github.com/swiftlang/swift/blob/main/include/swift/ABI/Metadata.h"
+  ],
+  "type_table_entries": 1603,
+  "module_filter": "Cloth",
+  "types": [
+    {
+      "name": "Cloth.Acknowledgements",
+      "descriptor": "0x100fadf10",
+      "metadata_accessor": "0x100215ee4",
+      "fields": []
+    },
+    {
+      "name": "Cloth.Acknowledgements.Component",
+      "descriptor": "0x100fadf2c",
+      "metadata_accessor": "0x1002164b0",
+      "fields": [
+        "name",
+        "version",
+        "role",
+        "license",
+        "source",
+        "documents",
+        "sourceTitle"
+      ]
+    },
+    {
+      "name": "Cloth.Acknowledgements.Component.Document",
+      "descriptor": "0x100fadf54",
+      "metadata_accessor": "0x100216718",
+      "fields": [
+        "title",
+        "file"
+      ]
+    },
+    {
+      "name": "Cloth.AcknowledgementsView",
+      "descriptor": "0x100fae138",
+      "metadata_accessor": "0x10021785c",
+      "fields": [
+        "_dismiss",
+        "__reading"
+      ]
+    },
+    {
+      "name": "Cloth.LicenseText",
+      "descriptor": "0x100fae160",
+      "metadata_accessor": "0x10021bc60",
+      "fields": [
+        "text"
+      ]
+    },
+    {
+      "name": "Cloth.AudioChunks",
+      "descriptor": "0x100fae1a4",
+      "metadata_accessor": "0x10021fd30",
+      "fields": []
+    },
+    {
+      "name": "Cloth.AudioChunks.Chunk",
+      "descriptor": "0x100fae1c0",
+      "metadata_accessor": "0x10021fc60",
+      "fields": [
+        "file",
+        "offset",
+        "keep"
+      ]
+    },
+    {
+      "name": "Cloth.CandidatePicker",
+      "descriptor": "0x100fae1e8",
+      "metadata_accessor": "0x1002206fc",
+      "fields": [
+        "candidates",
+        "window",
+        "request",
+        "onRender",
+        "onCancel",
+        "__selected"
+      ]
+    },
+    {
+      "name": "Cloth.anonymous.CandidateRow",
+      "descriptor": "0x100fae218",
+      "metadata_accessor": "0x1002278a0",
+      "fields": [
+        "candidate",
+        "isSelected",
+        "conflicts",
+        "onTopic",
+        "action",
+        "__hovering"
+      ]
+    },
+    {
+      "name": "Cloth.ClipEditor",
+      "descriptor": "0x100fae290",
+      "metadata_accessor": "0x1002339c0",
+      "fields": [
+        "job",
+        "clip",
+        "_store",
+        "_prefs",
+        "_dismiss",
+        "_recut",
+        "__kept",
+        "__touched"
+      ]
+    },
+    {
+      "name": "Cloth.anonymous.Glide",
+      "descriptor": "0x100fae2e8",
+      "metadata_accessor": "0x1002428ec",
+      "fields": [
+        "velocity",
+        "lastEvent",
+        "lastTick",
+        "step",
+        "link",
+        "timer"
+      ]
+    },
+    {
+      "name": "Cloth.ClipFolder",
+      "descriptor": "0x100fae314",
+      "metadata_accessor": "0x100244708",
+      "fields": [
+        "title",
+        "clipCount",
+        "clips",
+        "createdAt",
+        "sourceDuration",
+        "marks",
+        "transcriptPreview",
+        "namespace",
+        "onOpen",
+        "onEdit",
+        "postFirst",
+        "expanded",
+        "isOpening",
+        "__hovering",
+        "__posters",
+        "__rowViewport",
+        "__scrollX",
+        "__hoveredCard",
+        "__hoveredBottom",
+        "panelWidth",
+        "panelHeight",
+        "cardWidth",
+        "cardHeight",
+        "stageHeight",
+        "folderDrop",
+        "flyUp",
+        "flySpread"
+      ]
+    },
+    {
+      "name": "Cloth.anonymous.Wheel",
+      "descriptor": "0x100fae344",
+      "metadata_accessor": "0x100245d6c",
+      "fields": [
+        "enabled",
+        "onScroll",
+        "__monitor",
+        "__glide"
+      ]
+    },
+    {
+      "name": "Cloth.anonymous.FolderCardLink",
+      "descriptor": "0x100fae374",
+      "metadata_accessor": "0x100246184",
+      "fields": [
+        "namespace",
+        "id"
+      ]
+    },
+    {
+      "name": "Cloth.QuickLook",
+      "descriptor": "0x100fae414",
+      "metadata_accessor": "0x10024b624",
+      "fields": [
+        "items"
+      ]
+    },
+    {
+      "name": "Cloth.ClipThumbnail",
+      "descriptor": "0x100fae440",
+      "metadata_accessor": "0x10024c404",
+      "fields": [
+        "clip",
+        "postFirst",
+        "playlist",
+        "__poster",
+        "__hovering",
+        "width"
+      ]
+    },
+    {
+      "name": "Cloth.ClothApp",
+      "descriptor": "0x100fae490",
+      "metadata_accessor": "0x10024e87c",
+      "fields": [
+        "_delegate"
+      ]
+    },
+    {
+      "name": "Cloth.RailItem",
+      "descriptor": "0x100fae4e0",
+      "metadata_accessor": "0x10024efe4",
+      "fields": [
+        "id",
+        "symbol",
+        "title"
+      ]
+    },
+    {
+      "name": "Cloth.Rail",
+      "descriptor": "0x100fae4fc",
+      "metadata_accessor": "0x100250b14",
+      "fields": [
+        "items",
+        "_selection"
+      ]
+    },
+    {
+      "name": "Cloth.Badge",
+      "descriptor": "0x100fae518",
+      "metadata_accessor": "0x1002512e0",
+      "fields": [
+        "symbol",
+        "size",
+        "filled"
+      ]
+    },
+    {
+      "name": "Cloth.PrimaryButtonStyle",
+      "descriptor": "0x100fae534",
+      "metadata_accessor": "0x1002512f0",
+      "fields": [
+        "height"
+      ]
+    },
+    {
+      "name": "Cloth.PromptBox",
+      "descriptor": "0x100fae550",
+      "metadata_accessor": "0x1002515ec",
+      "fields": [
+        "placeholder",
+        "_text",
+        "lines",
+        "_focused"
+      ]
+    },
+    {
+      "name": "Cloth.Eyebrow",
+      "descriptor": "0x100fae56c",
+      "metadata_accessor": "0x1002515fc",
+      "fields": [
+        "text"
+      ]
+    },
+    {
+      "name": "Cloth.Card",
+      "descriptor": "0x100fae588",
+      "metadata_accessor": "0x100251b64",
+      "fields": [
+        "radius",
+        "content"
+      ]
+    },
+    {
+      "name": "Cloth.QuietButtonStyle",
+      "descriptor": "0x100fae5c4",
+      "metadata_accessor": "0x10025200c",
+      "fields": [
+        "height",
+        "destructive",
+        "__hovering"
+      ]
+    },
+    {
+      "name": "Cloth.SecondaryButtonStyle",
+      "descriptor": "0x100fae5ec",
+      "metadata_accessor": "0x1002524b8",
+      "fields": [
+        "height",
+        "__hovering"
+      ]
+    },
+    {
+      "name": "Cloth.anonymous.RailButton",
+      "descriptor": "0x100fae61c",
+      "metadata_accessor": "0x100251150",
+      "fields": [
+        "item",
+        "isSelected",
+        "action",
+        "__hovering"
+      ]
+    },
+    {
+      "name": "Cloth.PostFirstBadge",
+      "descriptor": "0x100fae66c",
+      "metadata_accessor": "0x10025690c",
+      "fields": [
+        "compact"
+      ]
+    },
+    {
+      "name": "Cloth.ContentView",
+      "descriptor": "0x100fae7fc",
+      "metadata_accessor": "0x100258638",
+      "fields": [
+        "_store",
+        "_prefs",
+        "__section",
+        "__pendingRun",
+        "_incoming",
+        "_navigation",
+        "__openJobID",
+        "__cameFromLibrary",
+        "railItems"
+      ]
+    },
+    {
+      "name": "Cloth.PendingRun",
+      "descriptor": "0x100fae84c",
+      "metadata_accessor": "0x10025e0fc",
+      "fields": [
+        "source",
+        "runPrompt"
+      ]
+    },
+    {
+      "name": "Cloth.CreateView",
+      "descriptor": "0x100fae874",
+      "metadata_accessor": "0x100283788",
+      "fields": [
+        "_store",
+        "_prefs",
+        "_pipeline",
+        "__source",
+        "__clipCount",
+        "__minLength",
+        "__maxLength",
+        "__customLength",
+        "__controlWidth",
+        "__editingCount",
+        "__countText",
+        "_countFocused",
+        "__burnSubtitles",
+        "__subtitlePlacement",
+        "__runPrompt",
+        "__quality",
+        "__didApplyDefaults",
+        "__manualPick",
+        "__isTargeted",
+        "__longRun",
+        "__measuring",
+        "__measuredLength",
+        "_incoming",
+        "__linkMode",
+        "__linkText",
+        "_linkFocused",
+        "actionRowWidth",
+        "chooseWidth",
+        "collapsedLinkWidth",
+        "_pendingRun",
+        "onBackToLibrary",
+        "isActive",
+        "__readyHeight",
+        "__stripWidth",
+        "__outputDirectory"
+      ]
+    },
+    {
+      "name": "Cloth.anonymous.FailureDetails",
+      "descriptor": "0x100fae8a4",
+      "metadata_accessor": "0x100289564",
+      "fields": [
+        "detail",
+        "__expanded",
+        "__copied"
+      ]
+    },
+    {
+      "name": "Cloth.CreateView.anonymous.StripWidthKey",
+      "descriptor": "0x100fae8d4",
+      "metadata_accessor": "0x100289da4",
+      "fields": []
+    },
+    {
+      "name": "Cloth.CreateView.anonymous.ReadyHeightKey",
+      "descriptor": "0x100fae8f8",
+      "metadata_accessor": "0x100289db4",
+      "fields": []
+    },
+    {
+      "name": "Cloth.CreateView.anonymous.ControlWidthKey",
+      "descriptor": "0x100fae91c",
+      "metadata_accessor": "0x100289dc4",
+      "fields": []
+    },
+    {
+      "name": "Cloth.CreateView.anonymous.LengthPreset",
+      "descriptor": "0x100fae940",
+      "metadata_accessor": "0x100289dd4",
+      "fields": [
+        "punchy",
+        "standard",
+        "long"
+      ]
+    },
+    {
+      "name": "Cloth.CropFocus.Placement",
+      "descriptor": "0x100fae9ac",
+      "metadata_accessor": "0x10029c600",
+      "fields": [
+        "from",
+        "duration",
+        "at"
+      ]
+    },
+    {
+      "name": "Cloth.CropFocus",
+      "descriptor": "0x100fae9c8",
+      "metadata_accessor": "0x10029c610",
+      "fields": []
+    },
+    {
+      "name": "Cloth.CropFocus.Move",
+      "descriptor": "0x100fae9e4",
+      "metadata_accessor": "0x10029c6d0",
+      "fields": [
+        "at",
+        "focusX",
+        "ramped"
+      ]
+    },
+    {
+      "name": "Cloth.CurationMemo",
+      "descriptor": "0x100faea1c",
+      "metadata_accessor": "0x10029c8d0",
+      "fields": [
+        "entries",
+        "capacity"
+      ]
+    },
+    {
+      "name": "Cloth.CurationMemo.Key",
+      "descriptor": "0x100faea38",
+      "metadata_accessor": "0x10029cfc0",
+      "fields": [
+        "source",
+        "words",
+        "speechEnd",
+        "speakers",
+        "clipCount",
+        "minClipDuration",
+        "maxClipDuration",
+        "standingPrompt",
+        "runPrompt"
+      ]
+    },
+    {
+      "name": "Cloth.Curation",
+      "descriptor": "0x100faeaa8",
+      "metadata_accessor": "0x10029e3d4",
+      "fields": [
+        "name",
+        "candidates"
+      ]
+    },
+    {
+      "name": "Cloth.MultipartBody",
+      "descriptor": "0x100faeac4",
+      "metadata_accessor": "0x1002ac240",
+      "fields": [
+        "fileURL",
+        "boundary"
+      ]
+    },
+    {
+      "name": "Cloth.Footage",
+      "descriptor": "0x100faeaec",
+      "metadata_accessor": "0x1002aead0",
+      "fields": [
+        "feed",
+        "player",
+        "looper",
+        "output",
+        "itemWatch",
+        "attached",
+        "ticker",
+        "url"
+      ]
+    },
+    {
+      "name": "Cloth.FootageFeed",
+      "descriptor": "0x100faeb34",
+      "metadata_accessor": "0x1002aedac",
+      "fields": [
+        "_frame",
+        "time",
+        "duration",
+        "still"
+      ]
+    },
+    {
+      "name": "Cloth.FootageFrame",
+      "descriptor": "0x100faeb7c",
+      "metadata_accessor": "0x1002af758",
+      "fields": [
+        "_feed",
+        "fadesAtLoop"
+      ]
+    },
+    {
+      "name": "Cloth.Incoming",
+      "descriptor": "0x100faebc0",
+      "metadata_accessor": "0x1002b0ddc",
+      "fields": [
+        "_file",
+        "_refusal"
+      ]
+    },
+    {
+      "name": "Cloth.AppDelegate",
+      "descriptor": "0x100faec08",
+      "metadata_accessor": "0x1002b1a6c",
+      "fields": []
+    },
+    {
+      "name": "Cloth.JobDetailView",
+      "descriptor": "0x100faec34",
+      "metadata_accessor": "0x1002b7514",
+      "fields": [
+        "job",
+        "__copied",
+        "__transcriptExpanded"
+      ]
+    },
+    {
+      "name": "Cloth.anonymous.SourceLink",
+      "descriptor": "0x100faec64",
+      "metadata_accessor": "0x1002b7dac",
+      "fields": [
+        "url",
+        "__hovering"
+      ]
+    },
+    {
+      "name": "Cloth.JobStore",
+      "descriptor": "0x100faecdc",
+      "metadata_accessor": "0x1002bf440",
+      "fields": [
+        "_jobs",
+        "fileURL",
+        "didFillTitles"
+      ]
+    },
+    {
+      "name": "Cloth.JobRecord",
+      "descriptor": "0x100faed24",
+      "metadata_accessor": "0x1002c028c",
+      "fields": [
+        "id",
+        "title",
+        "createdAt",
+        "sourceDuration",
+        "clips",
+        "transcript",
+        "seats",
+        "corrections",
+        "source",
+        "runPrompt"
+      ]
+    },
+    {
+      "name": "Cloth.JobRecord.anonymous.CodingKeys",
+      "descriptor": "0x100faed54",
+      "metadata_accessor": "0x1002c4e68",
+      "fields": [
+        "id",
+        "title",
+        "createdAt",
+        "sourceDuration",
+        "clips",
+        "transcript",
+        "seats",
+        "corrections",
+        "source",
+        "runPrompt"
+      ]
+    },
+    {
+      "name": "Cloth.JobRecord.Clip",
+      "descriptor": "0x100faed70",
+      "metadata_accessor": "0x1002c03d4",
+      "fields": [
+        "id",
+        "title",
+        "path",
+        "start",
+        "end",
+        "lines",
+        "pieces",
+        "dropped",
+        "rating",
+        "tightened"
+      ]
+    },
+    {
+      "name": "Cloth.JobRecord.Clip.anonymous.CodingKeys",
+      "descriptor": "0x100faeda0",
+      "metadata_accessor": "0x1002c6a74",
+      "fields": [
+        "id",
+        "title",
+        "path",
+        "start",
+        "end",
+        "lines",
+        "pieces",
+        "dropped",
+        "rating",
+        "tightened"
+      ]
+    },
+    {
+      "name": "Cloth.JobRecord.Clip.Line",
+      "descriptor": "0x100faedbc",
+      "metadata_accessor": "0x1002c6c40",
+      "fields": [
+        "text",
+        "start",
+        "end",
+        "words"
+      ]
+    },
+    {
+      "name": "Cloth.JobRecord.Clip.Line.anonymous.CodingKeys",
+      "descriptor": "0x100faede0",
+      "metadata_accessor": "0x1002c7068",
+      "fields": [
+        "text",
+        "start",
+        "end",
+        "words"
+      ]
+    },
+    {
+      "name": "Cloth.JobRecord.Clip.Line.Spoken",
+      "descriptor": "0x100faedfc",
+      "metadata_accessor": "0x1002c71ac",
+      "fields": [
+        "t",
+        "s",
+        "e",
+        "p"
+      ]
+    },
+    {
+      "name": "Cloth.JobRecord.Clip.Line.Spoken.anonymous.CodingKeys",
+      "descriptor": "0x100faee20",
+      "metadata_accessor": "0x1002c72c8",
+      "fields": [
+        "t",
+        "s",
+        "e",
+        "p"
+      ]
+    },
+    {
+      "name": "Cloth.LibraryView",
+      "descriptor": "0x100faee3c",
+      "metadata_accessor": "0x1002c8764",
+      "fields": [
+        "_store",
+        "_openJobID",
+        "onRunAgain",
+        "__openingJobID",
+        "__confirmingDelete",
+        "__editing"
+      ]
+    },
+    {
+      "name": "Cloth.ModeTabs.Tab",
+      "descriptor": "0x100faee8c",
+      "metadata_accessor": "0x1002d3d74",
+      "fields": [
+        "tag",
+        "title",
+        "symbol"
+      ]
+    },
+    {
+      "name": "Cloth.ModeTabs",
+      "descriptor": "0x100faeec8",
+      "metadata_accessor": "0x1002d4694",
+      "fields": [
+        "_selection",
+        "tabs",
+        "width",
+        "__hovered",
+        "trackPadding",
+        "gap",
+        "tabHeight"
+      ]
+    },
+    {
+      "name": "Cloth.VideoSource",
+      "descriptor": "0x100faef38",
+      "metadata_accessor": "0x1002d7a3c",
+      "fields": [
+        "file",
+        "link"
+      ]
+    },
+    {
+      "name": "Cloth.JobOptions",
+      "descriptor": "0x100faef60",
+      "metadata_accessor": "0x1002d80d0",
+      "fields": [
+        "mode",
+        "clipCount",
+        "minClipDuration",
+        "maxClipDuration",
+        "burnSubtitles",
+        "speakerColors",
+        "recognizeSpeakers",
+        "tightenPauses",
+        "subtitlePlacement",
+        "quality",
+        "standingPrompt",
+        "runPrompt",
+        "outputDirectory"
+      ]
+    },
+    {
+      "name": "Cloth.ClipCandidate",
+      "descriptor": "0x100faef88",
+      "metadata_accessor": "0x1002d863c",
+      "fields": [
+        "id",
+        "start",
+        "end",
+        "title",
+        "score",
+        "label",
+        "reason",
+        "onRequest"
+      ]
+    },
+    {
+      "name": "Cloth.Transcript",
+      "descriptor": "0x100faefb0",
+      "metadata_accessor": "0x1002d8900",
+      "fields": [
+        "words",
+        "segments",
+        "language",
+        "duration"
+      ]
+    },
+    {
+      "name": "Cloth.ClipSpec",
+      "descriptor": "0x100faefcc",
+      "metadata_accessor": "0x1002d8d78",
+      "fields": [
+        "id",
+        "start",
+        "end",
+        "title",
+        "pieces"
+      ]
+    },
+    {
+      "name": "Cloth.JobStage",
+      "descriptor": "0x100faeff4",
+      "metadata_accessor": "0x1002d8fcc",
+      "fields": [
+        "fetching",
+        "rendering",
+        "failed",
+        "idle",
+        "extractingAudio",
+        "transcribing",
+        "curating",
+        "awaitingSelection",
+        "finished"
+      ]
+    },
+    {
+      "name": "Cloth.ClothError",
+      "descriptor": "0x100faf010",
+      "metadata_accessor": "0x1002df824",
+      "fields": [
+        "missingAPIKey",
+        "transcriptionFailed",
+        "curationFailed",
+        "mediaFailed",
+        "downloadFailed",
+        "videoTooShort",
+        "nothingFitsLength",
+        "emptyTranscript",
+        "noSegmentsFound",
+        "cancelled"
+      ]
+    },
+    {
+      "name": "Cloth.VideoSource.anonymous.Kind",
+      "descriptor": "0x100faf034",
+      "metadata_accessor": "0x1002df834",
+      "fields": [
+        "file",
+        "link"
+      ]
+    },
+    {
+      "name": "Cloth.VideoSource.anonymous.CodingKeys",
+      "descriptor": "0x100faf058",
+      "metadata_accessor": "0x1002df844",
+      "fields": [
+        "kind",
+        "value"
+      ]
+    },
+    {
+      "name": "Cloth.SubtitlePlacement",
+      "descriptor": "0x100faf074",
+      "metadata_accessor": "0x1002df854",
+      "fields": [
+        "bottom",
+        "top"
+      ]
+    },
+    {
+      "name": "Cloth.JobOptions.Mode",
+      "descriptor": "0x100faf090",
+      "metadata_accessor": "0x1002df864",
+      "fields": [
+        "auto",
+        "manual"
+      ]
+    },
+    {
+      "name": "Cloth.TranscriptSegment",
+      "descriptor": "0x100faf0ac",
+      "metadata_accessor": "0x1002dfa3c",
+      "fields": [
+        "start",
+        "end",
+        "text",
+        "speaker"
+      ]
+    },
+    {
+      "name": "Cloth.Word",
+      "descriptor": "0x100faf0c8",
+      "metadata_accessor": "0x1002dfa4c",
+      "fields": [
+        "text",
+        "start",
+        "end",
+        "speaker"
+      ]
+    },
+    {
+      "name": "Cloth.ClipRating",
+      "descriptor": "0x100faf0e4",
+      "metadata_accessor": "0x1002dfb08",
+      "fields": [
+        "score",
+        "onRequest"
+      ]
+    },
+    {
+      "name": "Cloth.ClipSpec.Piece",
+      "descriptor": "0x100faf100",
+      "metadata_accessor": "0x1002dfb18",
+      "fields": [
+        "start",
+        "end"
+      ]
+    },
+    {
+      "name": "Cloth.ClipSpec.Piece.anonymous.CodingKeys",
+      "descriptor": "0x100faf124",
+      "metadata_accessor": "0x1002e113c",
+      "fields": [
+        "start",
+        "end"
+      ]
+    },
+    {
+      "name": "Cloth.ClipRating.anonymous.CodingKeys",
+      "descriptor": "0x100faf148",
+      "metadata_accessor": "0x1002e114c",
+      "fields": [
+        "score",
+        "onRequest"
+      ]
+    },
+    {
+      "name": "Cloth.DotTexture",
+      "descriptor": "0x100faf164",
+      "metadata_accessor": "0x1002e1a88",
+      "fields": [
+        "spacing"
+      ]
+    },
+    {
+      "name": "Cloth.MorphingSpinner",
+      "descriptor": "0x100faf180",
+      "metadata_accessor": "0x1002e6368",
+      "fields": [
+        "size",
+        "color",
+        "period"
+      ]
+    },
+    {
+      "name": "Cloth.StandbyFill",
+      "descriptor": "0x100faf19c",
+      "metadata_accessor": "0x1002e68e4",
+      "fields": [
+        "fraction",
+        "radius",
+        "content",
+        "__phase"
+      ]
+    },
+    {
+      "name": "Cloth.ClothToggle",
+      "descriptor": "0x100faf1d8",
+      "metadata_accessor": "0x1002e6b64",
+      "fields": [
+        "title",
+        "subtitle",
+        "_isOn"
+      ]
+    },
+    {
+      "name": "Cloth.FannedTiles",
+      "descriptor": "0x100faf1f4",
+      "metadata_accessor": "0x1002e706c",
+      "fields": [
+        "symbols",
+        "tile",
+        "inset",
+        "drop",
+        "__hovering"
+      ]
+    },
+    {
+      "name": "Cloth.DashedContainer",
+      "descriptor": "0x100faf21c",
+      "metadata_accessor": "0x1002e7b48",
+      "fields": [
+        "radius",
+        "content",
+        "__hovering"
+      ]
+    },
+    {
+      "name": "Cloth.anonymous.Tide",
+      "descriptor": "0x100faf288",
+      "metadata_accessor": "0x1002e8738",
+      "fields": [
+        "phase",
+        "level",
+        "amplitude"
+      ]
+    },
+    {
+      "name": "Cloth.Navigation",
+      "descriptor": "0x100faf384",
+      "metadata_accessor": "0x1002e90d4",
+      "fields": [
+        "_wantsSettings"
+      ]
+    },
+    {
+      "name": "Cloth.SettingsCommand",
+      "descriptor": "0x100faf3cc",
+      "metadata_accessor": "0x1002e967c",
+      "fields": [
+        "_openWindow"
+      ]
+    },
+    {
+      "name": "Cloth.Onboarding",
+      "descriptor": "0x100faf41c",
+      "metadata_accessor": "0x1002ec8e8",
+      "fields": [
+        "onFinish",
+        "__page"
+      ]
+    },
+    {
+      "name": "Cloth.OnboardingScript",
+      "descriptor": "0x100faf46c",
+      "metadata_accessor": "0x1002f0980",
+      "fields": [
+        "duration",
+        "words"
+      ]
+    },
+    {
+      "name": "Cloth.OnboardingScript.anonymous.CodingKeys",
+      "descriptor": "0x100faf490",
+      "metadata_accessor": "0x1002f0c84",
+      "fields": [
+        "duration",
+        "words"
+      ]
+    },
+    {
+      "name": "Cloth.OnboardingScript.Spoken",
+      "descriptor": "0x100faf4ac",
+      "metadata_accessor": "0x1002f0c94",
+      "fields": [
+        "t",
+        "s",
+        "e",
+        "p"
+      ]
+    },
+    {
+      "name": "Cloth.OnboardingScript.Spoken.anonymous.CodingKeys",
+      "descriptor": "0x100faf4d0",
+      "metadata_accessor": "0x1002f0db0",
+      "fields": [
+        "t",
+        "s",
+        "e",
+        "p"
+      ]
+    },
+    {
+      "name": "Cloth.OnboardingStage",
+      "descriptor": "0x100faf4ec",
+      "metadata_accessor": "0x1002f1dac",
+      "fields": [
+        "act",
+        "_reduceMotion",
+        "_source",
+        "_clip1",
+        "_clip2",
+        "_clip3",
+        "__sweepStarted",
+        "stageHeight",
+        "frameWidth",
+        "tileWidth",
+        "marks",
+        "spans",
+        "reasons",
+        "strength",
+        "chipSlot",
+        "sweepSeconds",
+        "bigScale"
+      ]
+    },
+    {
+      "name": "Cloth.anonymous.LiveCaption",
+      "descriptor": "0x100faf51c",
+      "metadata_accessor": "0x1002f7be8",
+      "fields": [
+        "_feed",
+        "cues"
+      ]
+    },
+    {
+      "name": "Cloth.anonymous.HeardWords",
+      "descriptor": "0x100faf540",
+      "metadata_accessor": "0x1002f7d20",
+      "fields": [
+        "_feed",
+        "cues"
+      ]
+    },
+    {
+      "name": "Cloth.OnboardingStage.Act",
+      "descriptor": "0x100faf55c",
+      "metadata_accessor": "0x1002f7d30",
+      "fields": [
+        "source",
+        "found",
+        "cut"
+      ]
+    },
+    {
+      "name": "Cloth.anonymous.TileCaption",
+      "descriptor": "0x100faf5a8",
+      "metadata_accessor": "0x1002f8024",
+      "fields": [
+        "words",
+        "lit"
+      ]
+    },
+    {
+      "name": "Cloth.OpenAICompatibleCuration.anonymous.ChatResponse",
+      "descriptor": "0x100faf644",
+      "metadata_accessor": "0x100300914",
+      "fields": [
+        "choices",
+        "error",
+        "usage"
+      ]
+    },
+    {
+      "name": "Cloth.OpenAICompatibleCuration.anonymous.ChatResponse.Failure",
+      "descriptor": "0x100faf660",
+      "metadata_accessor": "0x1003009d0",
+      "fields": [
+        "message"
+      ]
+    },
+    {
+      "name": "Cloth.OpenAICompatibleCuration.SelectionEnvelope",
+      "descriptor": "0x100faf67c",
+      "metadata_accessor": "0x1003009e0",
+      "fields": [
+        "projectTitle",
+        "segments"
+      ]
+    },
+    {
+      "name": "Cloth.OpenAICompatibleCuration.Endpoint",
+      "descriptor": "0x100faf698",
+      "metadata_accessor": "0x1002ffb70",
+      "fields": [
+        "name",
+        "baseURL",
+        "apiKey",
+        "extraHeaders",
+        "routed"
+      ]
+    },
+    {
+      "name": "Cloth.OpenAICompatibleCuration",
+      "descriptor": "0x100faf6c0",
+      "metadata_accessor": "0x1002ffb5c",
+      "fields": [
+        "endpoint",
+        "model",
+        "session",
+        "candidateCount",
+        "transport"
+      ]
+    },
+    {
+      "name": "Cloth.OpenAICompatibleCuration.anonymous.ChatResponse.Failure.CodingKeys",
+      "descriptor": "0x100faf6e8",
+      "metadata_accessor": "0x100302754",
+      "fields": [
+        "message"
+      ]
+    },
+    {
+      "name": "Cloth.OpenAICompatibleCuration.anonymous.ChatResponse.CodingKeys",
+      "descriptor": "0x100faf704",
+      "metadata_accessor": "0x100302764",
+      "fields": [
+        "choices",
+        "error",
+        "usage"
+      ]
+    },
+    {
+      "name": "Cloth.OpenAICompatibleCuration.SelectionEnvelope.CodingKeys",
+      "descriptor": "0x100faf720",
+      "metadata_accessor": "0x100302774",
+      "fields": [
+        "projectTitle",
+        "segments"
+      ]
+    },
+    {
+      "name": "Cloth.OpenAICompatibleCuration.anonymous.ChatResponse.Usage",
+      "descriptor": "0x100faf73c",
+      "metadata_accessor": "0x1003027d4",
+      "fields": [
+        "promptTokens",
+        "completionTokens"
+      ]
+    },
+    {
+      "name": "Cloth.OpenAICompatibleCuration.anonymous.ChatResponse.Choice",
+      "descriptor": "0x100faf758",
+      "metadata_accessor": "0x100302844",
+      "fields": [
+        "message",
+        "finishReason"
+      ]
+    },
+    {
+      "name": "Cloth.OpenAICompatibleCuration.Selection",
+      "descriptor": "0x100faf774",
+      "metadata_accessor": "0x100302aa4",
+      "fields": [
+        "startTimestamp",
+        "endTimestamp",
+        "title",
+        "score",
+        "label",
+        "reason",
+        "onRequest"
+      ]
+    },
+    {
+      "name": "Cloth.OpenAICompatibleCuration.anonymous.ChatResponse.Usage.CodingKeys",
+      "descriptor": "0x100faf790",
+      "metadata_accessor": "0x100302e78",
+      "fields": [
+        "promptTokens",
+        "completionTokens"
+      ]
+    },
+    {
+      "name": "Cloth.OpenAICompatibleCuration.anonymous.ChatResponse.Choice.CodingKeys",
+      "descriptor": "0x100faf7ac",
+      "metadata_accessor": "0x100302e88",
+      "fields": [
+        "message",
+        "finishReason"
+      ]
+    },
+    {
+      "name": "Cloth.OpenAICompatibleCuration.Selection.CodingKeys",
+      "descriptor": "0x100faf7c8",
+      "metadata_accessor": "0x100302fd8",
+      "fields": [
+        "startTimestamp",
+        "endTimestamp",
+        "title",
+        "score",
+        "label",
+        "reason",
+        "onRequest"
+      ]
+    },
+    {
+      "name": "Cloth.OpenAICompatibleCuration.anonymous.ChatResponse.Choice.Message",
+      "descriptor": "0x100faf7e4",
+      "metadata_accessor": "0x100303098",
+      "fields": [
+        "content",
+        "refusal"
+      ]
+    },
+    {
+      "name": "Cloth.OpenAICompatibleCuration.anonymous.ChatResponse.Choice.Message.CodingKeys",
+      "descriptor": "0x100faf800",
+      "metadata_accessor": "0x10030334c",
+      "fields": [
+        "content",
+        "refusal"
+      ]
+    },
+    {
+      "name": "Cloth.Pace.Job",
+      "descriptor": "0x100faf81c",
+      "metadata_accessor": "0x1003034c4",
+      "fields": [
+        "sourceMinutes",
+        "isLink",
+        "transcribes",
+        "clipSeconds"
+      ]
+    },
+    {
+      "name": "Cloth.Pace.Phase",
+      "descriptor": "0x100faf838",
+      "metadata_accessor": "0x100303614",
+      "fields": [
+        "fetch",
+        "transcribe",
+        "curate",
+        "footage",
+        "render"
+      ]
+    },
+    {
+      "name": "Cloth.Pace",
+      "descriptor": "0x100faf854",
+      "metadata_accessor": "0x100303624",
+      "fields": [
+        "fetchPerMinute",
+        "fetchFixed",
+        "transcribePerMinute",
+        "curate",
+        "footageLink",
+        "renderPerSecond"
+      ]
+    },
+    {
+      "name": "Cloth.Pace.Countdown",
+      "descriptor": "0x100faf870",
+      "metadata_accessor": "0x100303920",
+      "fields": [
+        "phaseEnds",
+        "phaseLength",
+        "later"
+      ]
+    },
+    {
+      "name": "Cloth.Pace.anonymous.CodingKeys",
+      "descriptor": "0x100faf8a0",
+      "metadata_accessor": "0x1003054d4",
+      "fields": [
+        "fetchPerMinute",
+        "fetchFixed",
+        "transcribePerMinute",
+        "curate",
+        "footageLink",
+        "renderPerSecond"
+      ]
+    },
+    {
+      "name": "Cloth.Page",
+      "descriptor": "0x100faf8bc",
+      "metadata_accessor": "0x100306a7c",
+      "fields": [
+        "title",
+        "subtitle",
+        "back",
+        "rename",
+        "actions",
+        "content",
+        "__scrolled",
+        "__headerHeight",
+        "collapseDistance",
+        "fadeHeight"
+      ]
+    },
+    {
+      "name": "Cloth.anonymous.EditableTitle",
+      "descriptor": "0x100faf90c",
+      "metadata_accessor": "0x10030c328",
+      "fields": [
+        "text",
+        "size",
+        "commit",
+        "__draft",
+        "__editing",
+        "__hovering",
+        "_focused"
+      ]
+    },
+    {
+      "name": "Cloth.Pipeline",
+      "descriptor": "0x100faf99c",
+      "metadata_accessor": "0x10032f064",
+      "fields": [
+        "_stage",
+        "wake",
+        "_clips",
+        "_transcript",
+        "_candidates",
+        "_seats",
+        "_portraits",
+        "_lastOptions",
+        "_failureDetail",
+        "_audioNotice",
+        "_sourceTitle",
+        "_curatedTitle",
+        "_countdown",
+        "pace",
+        "job",
+        "phase",
+        "measured",
+        "curated",
+        "curations",
+        "task",
+        "workspace",
+        "pending",
+        "videoTask",
+        "videoProgress",
+        "videoReady"
+      ]
+    },
+    {
+      "name": "Cloth.Pipeline.anonymous.PendingRender",
+      "descriptor": "0x100faf9ec",
+      "metadata_accessor": "0x10032f40c",
+      "fields": [
+        "video",
+        "audio",
+        "transcript",
+        "options",
+        "source",
+        "workspace"
+      ]
+    },
+    {
+      "name": "Cloth.RenderedClip",
+      "descriptor": "0x100fafa14",
+      "metadata_accessor": "0x100330b38",
+      "fields": [
+        "id",
+        "spec",
+        "url",
+        "rating",
+        "tightened"
+      ]
+    },
+    {
+      "name": "Cloth.Pipeline.Footage",
+      "descriptor": "0x100fafa3c",
+      "metadata_accessor": "0x100332bf0",
+      "fields": [
+        "file",
+        "from",
+        "span"
+      ]
+    },
+    {
+      "name": "Cloth.Pipeline.anonymous.Media",
+      "descriptor": "0x100fafa6c",
+      "metadata_accessor": "0x1003324c8",
+      "fields": [
+        "title",
+        "audioSource",
+        "separateAudio",
+        "video",
+        "sourceDuration"
+      ]
+    },
+    {
+      "name": "Cloth.Preferences",
+      "descriptor": "0x100fafa94",
+      "metadata_accessor": "0x10033527c",
+      "fields": [
+        "_burnSubtitles",
+        "_speakerColors",
+        "_recognizeSpeakers",
+        "_tightenPauses",
+        "_storedPlacement",
+        "_revealWhenDone",
+        "_soundWhenDone",
+        "_clipCount",
+        "_minClipLength",
+        "_maxClipLength",
+        "_storedQuality",
+        "_standingPrompt",
+        "_didFinishOnboarding",
+        "_storedOutput"
+      ]
+    },
+    {
+      "name": "Cloth.Recut",
+      "descriptor": "0x100fafad0",
+      "metadata_accessor": "0x100338b0c",
+      "fields": [
+        "_stage",
+        "_progress",
+        "task",
+        "workspace",
+        "staging"
+      ]
+    },
+    {
+      "name": "Cloth.Recut.Stage",
+      "descriptor": "0x100fafb18",
+      "metadata_accessor": "0x100338db4",
+      "fields": [
+        "fetching",
+        "failed",
+        "idle",
+        "rendering",
+        "done"
+      ]
+    },
+    {
+      "name": "Cloth.Secrets.anonymous.Cache",
+      "descriptor": "0x100fafb3c",
+      "metadata_accessor": "0x10033a510",
+      "fields": [
+        "lock",
+        "values"
+      ]
+    },
+    {
+      "name": "Cloth.SetappSession",
+      "descriptor": "0x100fafb94",
+      "metadata_accessor": "0x100344df4",
+      "fields": [
+        "$defaultActor",
+        "tokens",
+        "loaded",
+        "lastOffer",
+        "renewing"
+      ]
+    },
+    {
+      "name": "Cloth.SetappSession.anonymous.Tokens",
+      "descriptor": "0x100fafc6c",
+      "metadata_accessor": "0x100344ec8",
+      "fields": [
+        "access",
+        "refresh",
+        "expires"
+      ]
+    },
+    {
+      "name": "Cloth.SetappSession.anonymous.Links",
+      "descriptor": "0x100fafc9c",
+      "metadata_accessor": "0x10034ca60",
+      "fields": [
+        "data"
+      ]
+    },
+    {
+      "name": "Cloth.SetappSession.anonymous.anonymous.Reply",
+      "descriptor": "0x100fafcc8",
+      "metadata_accessor": "0x10034cc20",
+      "fields": [
+        "access_token",
+        "refresh_token",
+        "expires_in"
+      ]
+    },
+    {
+      "name": "Cloth.SetappSession.anonymous.Tokens.CodingKeys",
+      "descriptor": "0x100fafce4",
+      "metadata_accessor": "0x10034cc30",
+      "fields": [
+        "access",
+        "refresh",
+        "expires"
+      ]
+    },
+    {
+      "name": "Cloth.SetappSession.anonymous.Links.CodingKeys",
+      "descriptor": "0x100fafd00",
+      "metadata_accessor": "0x10034cdcc",
+      "fields": [
+        "data"
+      ]
+    },
+    {
+      "name": "Cloth.SetappSession.anonymous.anonymous.Reply.CodingKeys",
+      "descriptor": "0x100fafd1c",
+      "metadata_accessor": "0x10034cddc",
+      "fields": [
+        "access_token",
+        "refresh_token",
+        "expires_in"
+      ]
+    },
+    {
+      "name": "Cloth.SetappSession.anonymous.Links.Link",
+      "descriptor": "0x100fafd38",
+      "metadata_accessor": "0x10034cdf0",
+      "fields": [
+        "type",
+        "url"
+      ]
+    },
+    {
+      "name": "Cloth.SetappSession.anonymous.Links.Link.CodingKeys",
+      "descriptor": "0x100fafd54",
+      "metadata_accessor": "0x10034d618",
+      "fields": [
+        "type",
+        "url"
+      ]
+    },
+    {
+      "name": "Cloth.GatewayScribe.anonymous.NativeReply",
+      "descriptor": "0x100fafd78",
+      "metadata_accessor": "0x10034d628",
+      "fields": [
+        "languageCode",
+        "words"
+      ]
+    },
+    {
+      "name": "Cloth.GatewayScribe",
+      "descriptor": "0x100fafd94",
+      "metadata_accessor": "0x10034d638",
+      "fields": [
+        "session"
+      ]
+    },
+    {
+      "name": "Cloth.GatewayScribe.anonymous.Reply",
+      "descriptor": "0x100fafdb8",
+      "metadata_accessor": "0x10034d868",
+      "fields": [
+        "text",
+        "language",
+        "words"
+      ]
+    },
+    {
+      "name": "Cloth.SetappCurationTransport",
+      "descriptor": "0x100fafdd4",
+      "metadata_accessor": "0x10034d878",
+      "fields": [
+        "name"
+      ]
+    },
+    {
+      "name": "Cloth.GatewayScribe.anonymous.NativeReply.CodingKeys",
+      "descriptor": "0x100fafdf0",
+      "metadata_accessor": "0x10034da54",
+      "fields": [
+        "languageCode",
+        "words"
+      ]
+    },
+    {
+      "name": "Cloth.GatewayScribe.anonymous.Reply.CodingKeys",
+      "descriptor": "0x100fafe0c",
+      "metadata_accessor": "0x10034da64",
+      "fields": [
+        "text",
+        "language",
+        "words"
+      ]
+    },
+    {
+      "name": "Cloth.GatewayScribe.anonymous.NativeWord",
+      "descriptor": "0x100fafe30",
+      "metadata_accessor": "0x10034dcf0",
+      "fields": [
+        "text",
+        "type",
+        "start",
+        "end",
+        "speakerId"
+      ]
+    },
+    {
+      "name": "Cloth.GatewayScribe.anonymous.ReplyWord",
+      "descriptor": "0x100fafe54",
+      "metadata_accessor": "0x10034ddd4",
+      "fields": [
+        "word",
+        "start",
+        "end"
+      ]
+    },
+    {
+      "name": "Cloth.GatewayScribe.anonymous.NativeWord.CodingKeys",
+      "descriptor": "0x100fafe70",
+      "metadata_accessor": "0x10034e05c",
+      "fields": [
+        "text",
+        "type",
+        "start",
+        "end",
+        "speakerId"
+      ]
+    },
+    {
+      "name": "Cloth.GatewayScribe.anonymous.ReplyWord.CodingKeys",
+      "descriptor": "0x100fafe8c",
+      "metadata_accessor": "0x10034e06c",
+      "fields": [
+        "word",
+        "start",
+        "end"
+      ]
+    },
+    {
+      "name": "Cloth.SetappAICard.Balance",
+      "descriptor": "0x100fafea8",
+      "metadata_accessor": "0x10034e394",
+      "fields": [
+        "left",
+        "total"
+      ]
+    },
+    {
+      "name": "Cloth.SetappAICard",
+      "descriptor": "0x100fafec4",
+      "metadata_accessor": "0x10034ecd4",
+      "fields": [
+        "__balance",
+        "__problem",
+        "__loading"
+      ]
+    },
+    {
+      "name": "Cloth.SettingsView",
+      "descriptor": "0x100faff14",
+      "metadata_accessor": "0x100353d38",
+      "fields": [
+        "_prefs",
+        "__elevenKey",
+        "__routerKey",
+        "__logProblem",
+        "__showingAcknowledgements"
+      ]
+    },
+    {
+      "name": "Cloth.ClothRangeSlider.anonymous.Handle",
+      "descriptor": "0x100faff6c",
+      "metadata_accessor": "0x10035a694",
+      "fields": [
+        "lower",
+        "upper"
+      ]
+    },
+    {
+      "name": "Cloth.ClothRangeSlider",
+      "descriptor": "0x100faff88",
+      "metadata_accessor": "0x10035adb8",
+      "fields": [
+        "_lower",
+        "_upper",
+        "range",
+        "step",
+        "minSpan",
+        "label",
+        "unit",
+        "__dragging"
+      ]
+    },
+    {
+      "name": "Cloth.ClothSlider",
+      "descriptor": "0x100faffb0",
+      "metadata_accessor": "0x10035b120",
+      "fields": [
+        "_value",
+        "range",
+        "step",
+        "label"
+      ]
+    },
+    {
+      "name": "Cloth.anonymous.SliderKnob",
+      "descriptor": "0x100faffd4",
+      "metadata_accessor": "0x10035e618",
+      "fields": []
+    },
+    {
+      "name": "Cloth.anonymous.SliderTrack",
+      "descriptor": "0x100fafff8",
+      "metadata_accessor": "0x10035e628",
+      "fields": [
+        "filled"
+      ]
+    },
+    {
+      "name": "Cloth.SourceStrip",
+      "descriptor": "0x100fb00b4",
+      "metadata_accessor": "0x100362680",
+      "fields": [
+        "duration",
+        "marks",
+        "markWidth",
+        "trackHeight"
+      ]
+    },
+    {
+      "name": "Cloth.SpeakerFocus",
+      "descriptor": "0x100fb00f8",
+      "metadata_accessor": "0x100363810",
+      "fields": []
+    },
+    {
+      "name": "Cloth.SpeakerFocus.Seat",
+      "descriptor": "0x100fb0114",
+      "metadata_accessor": "0x100363904",
+      "fields": [
+        "speaker",
+        "x",
+        "votes",
+        "rival"
+      ]
+    },
+    {
+      "name": "Cloth.SpeakerFocus.Seat.anonymous.CodingKeys",
+      "descriptor": "0x100fb0138",
+      "metadata_accessor": "0x10036f2d8",
+      "fields": [
+        "speaker",
+        "x",
+        "votes",
+        "rival"
+      ]
+    },
+    {
+      "name": "Cloth.SpeakerFocus.Correction",
+      "descriptor": "0x100fb0154",
+      "metadata_accessor": "0x10036f39c",
+      "fields": [
+        "at",
+        "speaker"
+      ]
+    },
+    {
+      "name": "Cloth.SpeakerFocus.Correction.anonymous.CodingKeys",
+      "descriptor": "0x100fb0178",
+      "metadata_accessor": "0x10036f614",
+      "fields": [
+        "at",
+        "speaker"
+      ]
+    },
+    {
+      "name": "Cloth.SpeakerFocus.Turn",
+      "descriptor": "0x100fb0194",
+      "metadata_accessor": "0x10036f720",
+      "fields": [
+        "speaker",
+        "start",
+        "end"
+      ]
+    },
+    {
+      "name": "Cloth.SpeakerStitch",
+      "descriptor": "0x100fb01b0",
+      "metadata_accessor": "0x100370790",
+      "fields": []
+    },
+    {
+      "name": "Cloth.SpeakerStitch.Turn",
+      "descriptor": "0x100fb01cc",
+      "metadata_accessor": "0x1003708ec",
+      "fields": [
+        "start",
+        "end",
+        "speaker"
+      ]
+    },
+    {
+      "name": "Cloth.SubtitleBuilder.SafeArea.Chrome",
+      "descriptor": "0x100fb01e8",
+      "metadata_accessor": "0x100371aa0",
+      "fields": [
+        "platform",
+        "top",
+        "bottom",
+        "leading",
+        "trailing",
+        "crop",
+        "measured",
+        "source"
+      ]
+    },
+    {
+      "name": "Cloth.SubtitleBuilder",
+      "descriptor": "0x100fb0204",
+      "metadata_accessor": "0x100371ab0",
+      "fields": []
+    },
+    {
+      "name": "Cloth.SubtitleBuilder.Cue",
+      "descriptor": "0x100fb0220",
+      "metadata_accessor": "0x100371b40",
+      "fields": [
+        "start",
+        "end",
+        "words"
+      ]
+    },
+    {
+      "name": "Cloth.SubtitleLayer",
+      "descriptor": "0x100fb0258",
+      "metadata_accessor": "0x1003767dc",
+      "fields": []
+    },
+    {
+      "name": "Cloth.SubtitleLayer.anonymous.State",
+      "descriptor": "0x100fb027c",
+      "metadata_accessor": "0x1003768a8",
+      "fields": [
+        "start",
+        "end",
+        "attributed"
+      ]
+    },
+    {
+      "name": "Cloth.SubtitleLayer.Style",
+      "descriptor": "0x100fb0298",
+      "metadata_accessor": "0x100376c2c",
+      "fields": [
+        "fontName",
+        "fontSize",
+        "textColor",
+        "highlightColor",
+        "strokeColor",
+        "strokeWidth",
+        "shadowOpacity",
+        "shadowRadius",
+        "karaoke",
+        "speakerColors",
+        "speakerPalette",
+        "speakerLookup",
+        "placement"
+      ]
+    },
+    {
+      "name": "Cloth.TranscriptCache",
+      "descriptor": "0x100fb02b4",
+      "metadata_accessor": "0x10037e160",
+      "fields": []
+    },
+    {
+      "name": "Cloth.TranscriptCache.anonymous.Stored.W",
+      "descriptor": "0x100fb02d0",
+      "metadata_accessor": "0x10037e170",
+      "fields": [
+        "t",
+        "s",
+        "e",
+        "p"
+      ]
+    },
+    {
+      "name": "Cloth.TranscriptCache.anonymous.Stored",
+      "descriptor": "0x100fb02f4",
+      "metadata_accessor": "0x10037e340",
+      "fields": [
+        "words",
+        "language",
+        "duration"
+      ]
+    },
+    {
+      "name": "Cloth.TranscriptCache.anonymous.Stored.W.CodingKeys",
+      "descriptor": "0x100fb0310",
+      "metadata_accessor": "0x10037ea14",
+      "fields": [
+        "t",
+        "s",
+        "e",
+        "p"
+      ]
+    },
+    {
+      "name": "Cloth.TranscriptCache.anonymous.Stored.CodingKeys",
+      "descriptor": "0x100fb032c",
+      "metadata_accessor": "0x10037ea24",
+      "fields": [
+        "words",
+        "language",
+        "duration"
+      ]
+    },
+    {
+      "name": "Cloth.HTTPError",
+      "descriptor": "0x100fb0368",
+      "metadata_accessor": "0x10037f5e0",
+      "fields": [
+        "service",
+        "status",
+        "body"
+      ]
+    },
+    {
+      "name": "Cloth.BlankReply",
+      "descriptor": "0x100fb0384",
+      "metadata_accessor": "0x10038153c",
+      "fields": [
+        "service",
+        "reason"
+      ]
+    },
+    {
+      "name": "Cloth.UsageStore",
+      "descriptor": "0x100fb03a0",
+      "metadata_accessor": "0x1003815e0",
+      "fields": [
+        "_rows",
+        "_loading"
+      ]
+    },
+    {
+      "name": "Cloth.UsageStore.Row",
+      "descriptor": "0x100fb03e8",
+      "metadata_accessor": "0x100381ac4",
+      "fields": [
+        "id",
+        "service",
+        "usage",
+        "problem"
+      ]
+    },
+    {
+      "name": "Cloth.Usage",
+      "descriptor": "0x100fb042c",
+      "metadata_accessor": "0x100381c78",
+      "fields": [
+        "used",
+        "limit",
+        "unit",
+        "resets"
+      ]
+    },
+    {
+      "name": "Cloth.Usage.Unit",
+      "descriptor": "0x100fb0448",
+      "metadata_accessor": "0x100381d78",
+      "fields": [
+        "dollars",
+        "characters"
+      ]
+    },
+    {
+      "name": "Cloth.anonymous.ExportGate",
+      "descriptor": "0x100fb046c",
+      "metadata_accessor": "0x100382650",
+      "fields": [
+        "state",
+        "lock"
+      ]
+    },
+    {
+      "name": "Cloth.anonymous.ExportGate.State",
+      "descriptor": "0x100fb04a8",
+      "metadata_accessor": "0x100382670",
+      "fields": [
+        "waiting",
+        "exporting",
+        "cancelled"
+      ]
+    },
+    {
+      "name": "Cloth.Wakefulness",
+      "descriptor": "0x100fb04c4",
+      "metadata_accessor": "0x10038a990",
+      "fields": [
+        "token"
+      ]
+    },
+    {
+      "name": "Cloth.TextBox",
+      "descriptor": "0x100fb0500",
+      "metadata_accessor": "0x10038f64c",
+      "fields": [
+        "lock",
+        "data"
+      ]
+    },
+    {
+      "name": "Cloth.ProgressTracker",
+      "descriptor": "0x100fb053c",
+      "metadata_accessor": "0x10038f690",
+      "fields": [
+        "lock",
+        "pass",
+        "lastRaw",
+        "reported"
+      ]
+    },
+    {
+      "name": "Cloth.YtDlp",
+      "descriptor": "0x100fb0578",
+      "metadata_accessor": "0x10038fa18",
+      "fields": [
+        "executable",
+        "retryPauses"
+      ]
+    },
+    {
+      "name": "Cloth.YtDlp.Quality",
+      "descriptor": "0x100fb05a0",
+      "metadata_accessor": "0x10038faa0",
+      "fields": [
+        "standard",
+        "sharp",
+        "maximum"
+      ]
+    },
+    {
+      "name": "Cloth.YtDlp.Failure",
+      "descriptor": "0x100fb05bc",
+      "metadata_accessor": "0x1003917d0",
+      "fields": [
+        "stderr",
+        "status"
+      ]
+    },
+    {
+      "name": "Cloth.YtDlp.Fetched",
+      "descriptor": "0x100fb05d8",
+      "metadata_accessor": "0x1003915b4",
+      "fields": [
+        "file",
+        "title",
+        "sourceDuration"
+      ]
+    },
+    {
+      "name": "Cloth.anonymous.ResourceBundleClass",
+      "descriptor": "0x100fb0608",
+      "metadata_accessor": "0x100391c6c",
+      "fields": []
+    }
+  ],
+  "errors": [],
+  "skipped": []
+}

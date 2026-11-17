@@ -1,0 +1,12 @@
+{
+  "authority": "static source-path literals; not recovered files",
+  "files": [
+    "Cloth/ClipFolder.swift",
+    "Cloth/ClipThumbnail.swift",
+    "Cloth/ClothApp.swift",
+    "Cloth/Footage.swift",
+    "Cloth/LibraryView.swift",
+    "Cloth/Page.swift",
+    "Cloth/SetappAICard.swift"
+  ]
+}

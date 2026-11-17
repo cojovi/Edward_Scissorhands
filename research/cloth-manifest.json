@@ -1,0 +1,730 @@
+{
+  "root": "/Applications/Setapp/Cloth.app",
+  "recorded_at": "2026-10-29T13:45:27.088903+00:00",
+  "entries": [
+    {
+      "path": "Contents",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/CodeResources",
+      "kind": "file",
+      "size": 1884,
+      "sha256": "8847e95b5038a3a922355d5e9e5b470ba00cb53796a9324bf4bf10bc8657676e"
+    },
+    {
+      "path": "Contents/Info.plist",
+      "kind": "file",
+      "size": 3140,
+      "sha256": "e7ebe1b0024bda5e61f48c77a2a26f609514e099f84735333ff22b3e1709a5ee"
+    },
+    {
+      "path": "Contents/MacOS",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/MacOS/Cloth",
+      "kind": "file",
+      "size": 38490256,
+      "sha256": "b2d76ec43d4bcb279b13826f9f38c55faf9daf28e8153c3c3a52e4a48e89db3e"
+    },
+    {
+      "path": "Contents/PkgInfo",
+      "kind": "file",
+      "size": 8,
+      "sha256": "82502191c9484b04d685374f9879a0066069c49b8acae7a04b01d38d07e8eca0"
+    },
+    {
+      "path": "Contents/Resources",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/Resources/01 Three principles for a positive AI future.mp4",
+      "kind": "file",
+      "size": 3732523,
+      "sha256": "25b6ad0acb0deca55e1fa365d5b483a11b266e9f42beddf69fb88fc57b24241c"
+    },
+    {
+      "path": "Contents/Resources/02 Why restricting AI is the wrong move.mp4",
+      "kind": "file",
+      "size": 3221855,
+      "sha256": "5bfcf782b40bbdb8ac46ffdf7aa0a670fa8e2d857aa2321691720ba735790a01"
+    },
+    {
+      "path": "Contents/Resources/03 Access vs regulation \u2014 which matters more.mp4",
+      "kind": "file",
+      "size": 4350283,
+      "sha256": "0dc4d114fe0d5e7dcae5fa1ff96b984cbdad36f3f583fc2c08f377537fe2c87a"
+    },
+    {
+      "path": "Contents/Resources/AppIcon.icns",
+      "kind": "file",
+      "size": 2220894,
+      "sha256": "e393a4cb2b5dfecbf16cabb1da9ffc648e5fc4ea5a441198ab70e8d8bdca3a9b"
+    },
+    {
+      "path": "Contents/Resources/Assets.car",
+      "kind": "file",
+      "size": 2213784,
+      "sha256": "737f5d74ec7c0a7416390a34b980c368f656946e098854873f5b3564b6c07fee"
+    },
+    {
+      "path": "Contents/Resources/FluidAudio_FluidAudio.bundle",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/Resources/FluidAudio_FluidAudio.bundle/Contents",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/Resources/FluidAudio_FluidAudio.bundle/Contents/Info.plist",
+      "kind": "file",
+      "size": 1138,
+      "sha256": "24fb2861842d0d05c11a0309fab03ea6f4473b96d9542905fa24dac119395ff8"
+    },
+    {
+      "path": "Contents/Resources/FluidAudio_FluidAudio.bundle/Contents/Resources",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/Resources/FluidAudio_FluidAudio.bundle/Contents/Resources/luxtts_en_us_g2p_aux.json",
+      "kind": "file",
+      "size": 37000,
+      "sha256": "e67d7d3097daf9e14f56f81c64109d44dc5bca2d60252b1724282ce1065b029a"
+    },
+    {
+      "path": "Contents/Resources/FluidAudio_FluidAudio.bundle/Contents/Resources/luxtts_en_us_lexicon.tsv.zz",
+      "kind": "file",
+      "size": 982385,
+      "sha256": "c6caf56e109a87a4fd8244fa722389a9091e4b6071279b77e3a97e96601fa79e"
+    },
+    {
+      "path": "Contents/Resources/FluidAudio_FluidAudio.bundle/Contents/_CodeSignature",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/Resources/FluidAudio_FluidAudio.bundle/Contents/_CodeSignature/CodeDirectory",
+      "kind": "file",
+      "size": 223,
+      "sha256": "43f2d01c7abf3f0be65052b28914f4c2450e432573f861f9a3469b49c225335f"
+    },
+    {
+      "path": "Contents/Resources/FluidAudio_FluidAudio.bundle/Contents/_CodeSignature/CodeRequirements",
+      "kind": "file",
+      "size": 224,
+      "sha256": "65417fe2bfcf6d79bc669b2e3bdee8867bf25583a15538756057a3162ecd9f1f"
+    },
+    {
+      "path": "Contents/Resources/FluidAudio_FluidAudio.bundle/Contents/_CodeSignature/CodeResources",
+      "kind": "file",
+      "size": 2732,
+      "sha256": "0945022d535a3db069564e5867ed6c0440506b4c3be8bb9fe5d6cac3000ae03f"
+    },
+    {
+      "path": "Contents/Resources/FluidAudio_FluidAudio.bundle/Contents/_CodeSignature/CodeSignature",
+      "kind": "file",
+      "size": 8971,
+      "sha256": "7717f8d46aab9c6bf5cc1372afd9c524d6fa507c70aa113a2098826ecfa4e37d"
+    },
+    {
+      "path": "Contents/Resources/GPL-3.0.txt",
+      "kind": "file",
+      "size": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "Contents/Resources/Models",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/Resources/Models/speaker-diarization",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/Resources/Models/speaker-diarization/.fluidaudio-revision",
+      "kind": "file",
+      "size": 41,
+      "sha256": "1f6ae38637c86e0998be2d231a1431a5a3c37010e9337b682e635cd5c147ef7a"
+    },
+    {
+      "path": "Contents/Resources/Models/speaker-diarization/Embedding.mlmodelc",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/Resources/Models/speaker-diarization/Embedding.mlmodelc/analytics",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/Resources/Models/speaker-diarization/Embedding.mlmodelc/analytics/coremldata.bin",
+      "kind": "file",
+      "size": 243,
+      "sha256": "8d6706436639b53830b4dbe8aaf9c9a843f7f582d63e16f3cb8bb7c6ccd58682"
+    },
+    {
+      "path": "Contents/Resources/Models/speaker-diarization/Embedding.mlmodelc/coremldata.bin",
+      "kind": "file",
+      "size": 704,
+      "sha256": "4a705bac27d151d9642f37609296042a15602a42253039e0921dc9e75da7e004"
+    },
+    {
+      "path": "Contents/Resources/Models/speaker-diarization/Embedding.mlmodelc/metadata.json",
+      "kind": "file",
+      "size": 2818,
+      "sha256": "1854371eb6b438fb8aeac96afb45c999af7902581c06afdfcd7ff3cb1ce66be5"
+    },
+    {
+      "path": "Contents/Resources/Models/speaker-diarization/Embedding.mlmodelc/model.mil",
+      "kind": "file",
+      "size": 78432,
+      "sha256": "22fa958aef72a561c21f874a07cbdcd30fdf40ee961c0bc2fb67c119273b46d3"
+    },
+    {
+      "path": "Contents/Resources/Models/speaker-diarization/Embedding.mlmodelc/weights",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/Resources/Models/speaker-diarization/Embedding.mlmodelc/weights/weight.bin",
+      "kind": "file",
+      "size": 13412288,
+      "sha256": "99356b2985b8d43880a657024d941d450b38820451ccff903f76ed4e52d1868b"
+    },
+    {
+      "path": "Contents/Resources/Models/speaker-diarization/FBank.mlmodelc",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/Resources/Models/speaker-diarization/FBank.mlmodelc/analytics",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/Resources/Models/speaker-diarization/FBank.mlmodelc/analytics/coremldata.bin",
+      "kind": "file",
+      "size": 243,
+      "sha256": "0e8bd3a8b82ac123580989f490e4d9245127c535857630b543311268accc3f0a"
+    },
+    {
+      "path": "Contents/Resources/Models/speaker-diarization/FBank.mlmodelc/coremldata.bin",
+      "kind": "file",
+      "size": 853,
+      "sha256": "57ac436bb0671cbb5527a339134d695f752eb77f7a18966b93c6835335595759"
+    },
+    {
+      "path": "Contents/Resources/Models/speaker-diarization/FBank.mlmodelc/metadata.json",
+      "kind": "file",
+      "size": 3409,
+      "sha256": "2623785f5d186893b82d01e84aa33a7704ef763c3309e02055f22dc9d871ce9a"
+    },
+    {
+      "path": "Contents/Resources/Models/speaker-diarization/FBank.mlmodelc/model.mil",
+      "kind": "file",
+      "size": 15667,
+      "sha256": "27aaeb21569e81bdbe2eef87789f50a37cfea800039bd134448a9417de2f30ed"
+    },
+    {
+      "path": "Contents/Resources/Models/speaker-diarization/FBank.mlmodelc/weights",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/Resources/Models/speaker-diarization/FBank.mlmodelc/weights/weight.bin",
+      "kind": "file",
+      "size": 1776896,
+      "sha256": "9e83fdd3ea78064b078069e4d9141603c61c47a27fd19e7e3142ff7476f8db36"
+    },
+    {
+      "path": "Contents/Resources/Models/speaker-diarization/PldaRho.mlmodelc",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/Resources/Models/speaker-diarization/PldaRho.mlmodelc/analytics",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/Resources/Models/speaker-diarization/PldaRho.mlmodelc/analytics/coremldata.bin",
+      "kind": "file",
+      "size": 243,
+      "sha256": "8940ea6044dbcbefa22da8cc41e0b485e1fb5ed89aecaf37c6e0c483a97ddcd7"
+    },
+    {
+      "path": "Contents/Resources/Models/speaker-diarization/PldaRho.mlmodelc/coremldata.bin",
+      "kind": "file",
+      "size": 763,
+      "sha256": "4d9741477f721c79b09fcdfe455110c4b7d4272e2de3496bf1729d966d3ee418"
+    },
+    {
+      "path": "Contents/Resources/Models/speaker-diarization/PldaRho.mlmodelc/metadata.json",
+      "kind": "file",
+      "size": 2749,
+      "sha256": "b314cf25a93e46b4076883a6f5a2f8848b73c3851bd9d36074d067f35a1c7945"
+    },
+    {
+      "path": "Contents/Resources/Models/speaker-diarization/PldaRho.mlmodelc/model.mil",
+      "kind": "file",
+      "size": 7613,
+      "sha256": "83aee2e5310d19b5f202aea97d07a0e12102556d1b32ef3ed08b36f7f9725041"
+    },
+    {
+      "path": "Contents/Resources/Models/speaker-diarization/PldaRho.mlmodelc/weights",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/Resources/Models/speaker-diarization/PldaRho.mlmodelc/weights/weight.bin",
+      "kind": "file",
+      "size": 200192,
+      "sha256": "80f7d229202636d372428c90596f11a91545f07da77259f07153aaf225914a36"
+    },
+    {
+      "path": "Contents/Resources/Models/speaker-diarization/Segmentation.mlmodelc",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/Resources/Models/speaker-diarization/Segmentation.mlmodelc/analytics",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/Resources/Models/speaker-diarization/Segmentation.mlmodelc/analytics/coremldata.bin",
+      "kind": "file",
+      "size": 243,
+      "sha256": "64265f8e7ad41a5f68d630c15288c2499cca5892ad49e20096819cdeac004cdb"
+    },
+    {
+      "path": "Contents/Resources/Models/speaker-diarization/Segmentation.mlmodelc/coremldata.bin",
+      "kind": "file",
+      "size": 812,
+      "sha256": "ea51481b8bd3e496ad3cf16f066ddaa37f20e8772eaac76b3393c28de20e06bc"
+    },
+    {
+      "path": "Contents/Resources/Models/speaker-diarization/Segmentation.mlmodelc/metadata.json",
+      "kind": "file",
+      "size": 3410,
+      "sha256": "88dbf0b07208fe142e1729c2b4c974ad3599fcb2ae5d5f18fce782b225384124"
+    },
+    {
+      "path": "Contents/Resources/Models/speaker-diarization/Segmentation.mlmodelc/model.mil",
+      "kind": "file",
+      "size": 43063,
+      "sha256": "d37e4ce30b406a6b34f765f769b9baed3178cc0c2b2e299c641daa43a052dd3f"
+    },
+    {
+      "path": "Contents/Resources/Models/speaker-diarization/Segmentation.mlmodelc/weights",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/Resources/Models/speaker-diarization/Segmentation.mlmodelc/weights/weight.bin",
+      "kind": "file",
+      "size": 5959360,
+      "sha256": "c3189a64946c75bc24fcb98afe89ad78c52bdbadfdf65e857fb1b81e2cc9fbb2"
+    },
+    {
+      "path": "Contents/Resources/Models/speaker-diarization/config.json",
+      "kind": "file",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "Contents/Resources/Models/speaker-diarization/plda-parameters.json",
+      "kind": "file",
+      "size": 89416,
+      "sha256": "38ee28d4269c076cef254ee760bbd811f0738a92e0f01f9699ad372828c5de8f"
+    },
+    {
+      "path": "Contents/Resources/Models/speaker-diarization/xvector-transform.json",
+      "kind": "file",
+      "size": 177499,
+      "sha256": "f7cd5cc16e63e2d89db052a23018ecfc47a311998ed1e9e39838fbac65048688"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/Info.plist",
+      "kind": "file",
+      "size": 1150,
+      "sha256": "138a87ee0209e7d83cc4ee3385d624364b370119ef7f212c563c77bf46b854e4"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/Resources",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/Resources/SetappFramework-Resources.bundle",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/Resources/SetappFramework-Resources.bundle/Assets.car",
+      "kind": "file",
+      "size": 117400,
+      "sha256": "d4815ce49e72442babe796e54aba257c5d9341d70f60be805943112ef4f6a7e0"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/Resources/SetappFramework-Resources.bundle/Info.plist",
+      "kind": "file",
+      "size": 1539,
+      "sha256": "fdef7b58f8c79cd99c58c0bb5edc394c380c90669f2a2fad93b3539ba51c910c"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/Resources/SetappFramework-Resources.bundle/PrivacyInfo.xcprivacy",
+      "kind": "file",
+      "size": 1810,
+      "sha256": "f5cc7508ccb5c6830fed4a44a727be277bacfe59d7d602517f57ea8b2e445f1f"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/Resources/SetappFramework-Resources.bundle/Resources-Info.plist",
+      "kind": "file",
+      "size": 502,
+      "sha256": "1df6571576c2935338acd07d1963ca1fc4083a06c8f272293f34acefd70f3f69"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/Resources/SetappFramework-Resources.bundle/animation_activation_complete.png",
+      "kind": "file",
+      "size": 174753,
+      "sha256": "c5f68bfe4ca3cd13679a76ea945ac458cffa6e3781df31c39448dcb0699649c9"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/Resources/SetappFramework-Resources.bundle/animation_loading_loop.png",
+      "kind": "file",
+      "size": 129368,
+      "sha256": "b96feb195bb9d1b182de092252d0fe79862978669c634469c44d129a69770ac2"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/Resources/SetappFramework-Resources.bundle/da.lproj",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/Resources/SetappFramework-Resources.bundle/da.lproj/Localizable.strings",
+      "kind": "file",
+      "size": 6991,
+      "sha256": "41ff2a6d0e7d2307c75c5b7a97bec77e4eead8c6ad5b79c54b1f2ed28746cd23"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/Resources/SetappFramework-Resources.bundle/de.lproj",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/Resources/SetappFramework-Resources.bundle/de.lproj/Localizable.strings",
+      "kind": "file",
+      "size": 6958,
+      "sha256": "818a379baa5150a189e36cd721e0c4e5e623b3eb072008f2591540a14c087f5a"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/Resources/SetappFramework-Resources.bundle/en.lproj",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/Resources/SetappFramework-Resources.bundle/en.lproj/Localizable.strings",
+      "kind": "file",
+      "size": 5648,
+      "sha256": "549c1fede90cd2fe7b16641c1ae825efa70474249eef706aa9ea1132b0bc9920"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/Resources/SetappFramework-Resources.bundle/es.lproj",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/Resources/SetappFramework-Resources.bundle/es.lproj/Localizable.strings",
+      "kind": "file",
+      "size": 7391,
+      "sha256": "a3e275a853de3794da6656273b0acc4102d7a1c8f2dde7984ddf6422e489eaac"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/Resources/SetappFramework-Resources.bundle/fi.lproj",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/Resources/SetappFramework-Resources.bundle/fi.lproj/Localizable.strings",
+      "kind": "file",
+      "size": 6923,
+      "sha256": "ef36a495283ce9f4674b490da3f99e0ce9d414c8ac93b6fbed4734c96e9271d7"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/Resources/SetappFramework-Resources.bundle/fr.lproj",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/Resources/SetappFramework-Resources.bundle/fr.lproj/Localizable.strings",
+      "kind": "file",
+      "size": 7626,
+      "sha256": "330ca823b9726c895917459c8b033ba981c5e56dffe3a6c71475f152bd5d5311"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/Resources/SetappFramework-Resources.bundle/hu.lproj",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/Resources/SetappFramework-Resources.bundle/hu.lproj/Localizable.strings",
+      "kind": "file",
+      "size": 7938,
+      "sha256": "338d97dea200682e1a73bbce81d532d9d9463fb5330b98ebc21b83400228f747"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/Resources/SetappFramework-Resources.bundle/it.lproj",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/Resources/SetappFramework-Resources.bundle/it.lproj/Localizable.strings",
+      "kind": "file",
+      "size": 6034,
+      "sha256": "9c2f13789c217d836b0423ad2e3c9558d2a7901883a07a34822c9e516b869153"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/Resources/SetappFramework-Resources.bundle/nl.lproj",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/Resources/SetappFramework-Resources.bundle/nl.lproj/Localizable.strings",
+      "kind": "file",
+      "size": 5482,
+      "sha256": "10fd3e4fa45d660d6805b7c1fbca41f546785e7a0630959eac98535d99d1f0a1"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/Resources/SetappFramework-Resources.bundle/pl.lproj",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/Resources/SetappFramework-Resources.bundle/pl.lproj/Localizable.strings",
+      "kind": "file",
+      "size": 7773,
+      "sha256": "62cdf6bee0e84576bf4bd59cfe48af0989f996921ded3de399b9403f0a6e07da"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/Resources/SetappFramework-Resources.bundle/pt-BR.lproj",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/Resources/SetappFramework-Resources.bundle/pt-BR.lproj/Localizable.strings",
+      "kind": "file",
+      "size": 4920,
+      "sha256": "344fe3210463f6e0497ec55c072df15926a5169028ed19b34b699c124c653d49"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/Resources/SetappFramework-Resources.bundle/ro.lproj",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/Resources/SetappFramework-Resources.bundle/ro.lproj/Localizable.strings",
+      "kind": "file",
+      "size": 8003,
+      "sha256": "0a77e470b652645706c947953781ee6d51baea4c7a5e1050f67df2e69d74b953"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/Resources/SetappFramework-Resources.bundle/sv.lproj",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/Resources/SetappFramework-Resources.bundle/sv.lproj/Localizable.strings",
+      "kind": "file",
+      "size": 7317,
+      "sha256": "1f7275298162d6c2c468b7d4a20986304f4d72e5115d38fab127a000b97827ed"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/Resources/SetappFramework-Resources.bundle/uk.lproj",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/Resources/SetappFramework-Resources.bundle/uk.lproj/Localizable.strings",
+      "kind": "file",
+      "size": 7865,
+      "sha256": "3352a4dbfe75d2af557346c26e6a356d15133ef72d5eba7bca6f0a10d1728df9"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/Resources/SetappFramework-Resources.bundle/zh-Hans.lproj",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/Resources/SetappFramework-Resources.bundle/zh-Hans.lproj/Localizable.strings",
+      "kind": "file",
+      "size": 4438,
+      "sha256": "6af7369b17e712e2899c09e3b1cf9855c65e5e441f433b396be885e560743fb9"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/_CodeSignature",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/_CodeSignature/CodeDirectory",
+      "kind": "file",
+      "size": 234,
+      "sha256": "185946ecaa84366b07506af467c8d0f238e749b7905c22175ebfca4fcab486ea"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/_CodeSignature/CodeRequirements",
+      "kind": "file",
+      "size": 236,
+      "sha256": "2fb3917753c6c15e65f348984ba5fcdb7a94f74704759171dcaab7cbb9565f0a"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/_CodeSignature/CodeResources",
+      "kind": "file",
+      "size": 10659,
+      "sha256": "6109caca23181154ec775748c9f2e1b830b5e0805a16574cd04a82bf0c959129"
+    },
+    {
+      "path": "Contents/Resources/Setapp_SetappResources.bundle/Contents/_CodeSignature/CodeSignature",
+      "kind": "file",
+      "size": 8970,
+      "sha256": "588a54ab7dffba38932a52a12d72fcb07757eb7452271d9df97c0027fbd721fb"
+    },
+    {
+      "path": "Contents/Resources/bin",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/Resources/bin/ffmpeg",
+      "kind": "file",
+      "size": 6170576,
+      "sha256": "6c141f75cec89de9a4b50039500a7788ddc13b99790efb07192b19e3885ce0be"
+    },
+    {
+      "path": "Contents/Resources/bin/qjs",
+      "kind": "file",
+      "size": 2467088,
+      "sha256": "6b95e94b72d8bc49a5359004c2f7100ec0726f472b32b842f7f5f5b0886182e9"
+    },
+    {
+      "path": "Contents/Resources/bin/yt-dlp",
+      "kind": "file",
+      "size": 36932352,
+      "sha256": "44c4bae464e9f5b77274732ff6eb99f303c4e1c568769e3239e39e555525a73c"
+    },
+    {
+      "path": "Contents/Resources/demo-face-speaker_0.png",
+      "kind": "file",
+      "size": 39671,
+      "sha256": "e3d241b30f233171b386a681ef8df90b035f0b90d0d74ceab939d8a2d77c11b4"
+    },
+    {
+      "path": "Contents/Resources/demo-face-speaker_1.png",
+      "kind": "file",
+      "size": 38807,
+      "sha256": "412d28128779e17fd501a6aeb178a3963c22a7bbfb8bb3c15bc629fd4c2847a5"
+    },
+    {
+      "path": "Contents/Resources/demo.json",
+      "kind": "file",
+      "size": 83607,
+      "sha256": "f3c556c2d8841c5723d0e35776ff06059777874c6e2eddd3aa118c7c770bf89f"
+    },
+    {
+      "path": "Contents/Resources/ffmpeg-LGPL-2.1.txt",
+      "kind": "file",
+      "size": 26526,
+      "sha256": "b634ab5640e258563c536e658cad87080553df6f34f62269a21d554844e58bfe"
+    },
+    {
+      "path": "Contents/Resources/ffmpeg-NOTICE.txt",
+      "kind": "file",
+      "size": 1297,
+      "sha256": "47394af775dae838817b03e4ec06466b0e4b6aceb068c75391da1bf1fcc4dc1e"
+    },
+    {
+      "path": "Contents/Resources/fluidaudio-LICENSE.txt",
+      "kind": "file",
+      "size": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "Contents/Resources/fluidaudio-THIRD_PARTY_LICENSES.txt",
+      "kind": "file",
+      "size": 32870,
+      "sha256": "468514721a01c85ac59125c55243e5161b35783ec85dbd5a4814b73e4e937b4b"
+    },
+    {
+      "path": "Contents/Resources/onboarding-clip-1.json",
+      "kind": "file",
+      "size": 2259,
+      "sha256": "2f3325d26d3c8e2c7b68e703c7becc3258ba4b9052aec6380f935f8e33553b3a"
+    },
+    {
+      "path": "Contents/Resources/onboarding-clip-1.mp4",
+      "kind": "file",
+      "size": 652626,
+      "sha256": "c751a8d0294198937ea3f70b04a797d188c91496bb3ad84cf5f04151c39639ad"
+    },
+    {
+      "path": "Contents/Resources/onboarding-clip-2.json",
+      "kind": "file",
+      "size": 2340,
+      "sha256": "a72ad92a551b4e201891babd1ba6b8edd67d436f8878f2c9ad0f9391c2c115c7"
+    },
+    {
+      "path": "Contents/Resources/onboarding-clip-2.mp4",
+      "kind": "file",
+      "size": 814389,
+      "sha256": "3d614343fe37f63bb3cff6830c2bec44334b84545e6c764cdbc1aad679a9959c"
+    },
+    {
+      "path": "Contents/Resources/onboarding-clip-3.json",
+      "kind": "file",
+      "size": 1281,
+      "sha256": "d55cce1e2008a17ac1a5f597f52b3e81f3903b1921fc4a0fb289c0bc8cc6201d"
+    },
+    {
+      "path": "Contents/Resources/onboarding-clip-3.mp4",
+      "kind": "file",
+      "size": 587752,
+      "sha256": "e6372115f5614b7801da865a75672224884af85a66cdd99db37c530b9c74732c"
+    },
+    {
+      "path": "Contents/Resources/onboarding-footage-NOTICE.txt",
+      "kind": "file",
+      "size": 791,
+      "sha256": "c428143d1c1e99dc7d3fc5ec38970e82edf8411258b6f6fba2cc984f4455ba74"
+    },
+    {
+      "path": "Contents/Resources/onboarding-source.json",
+      "kind": "file",
+      "size": 3375,
+      "sha256": "6b3f03df5a9e4e3a793138def9782d678e8cd2d15ab866e38e5125a25b6712d3"
+    },
+    {
+      "path": "Contents/Resources/onboarding-source.mp4",
+      "kind": "file",
+      "size": 1731158,
+      "sha256": "d63d8f5167ffb12aec9a0135a6428eb8c646f22239f2d9fc22a62a04f2821795"
+    },
+    {
+      "path": "Contents/Resources/quickjs-ng-LICENSE.txt",
+      "kind": "file",
+      "size": 1212,
+      "sha256": "96f73f9d2a16c21a36b418f06073be26e7d6d5e7c1bc99756b21a4f2c74ef171"
+    },
+    {
+      "path": "Contents/Resources/setappPublicKey.pem",
+      "kind": "file",
+      "size": 800,
+      "sha256": "64f03affd26c1b500251f0fa385e3296baefa5bb316927cec5bed913e53a7543"
+    },
+    {
+      "path": "Contents/Resources/speaker-diarization-community-1-LICENSE.txt",
+      "kind": "file",
+      "size": 19759,
+      "sha256": "736763bf08829e36266b8a3bebcc041ac68575424e976490671a7e6b43a525cf"
+    },
+    {
+      "path": "Contents/Resources/yt-dlp-LICENSE.txt",
+      "kind": "file",
+      "size": 1211,
+      "sha256": "7e12e5df4bae12cb21581ba157ced20e1986a0508dd10d0e8a4ab9a4cf94e85c"
+    },
+    {
+      "path": "Contents/Resources/yt-dlp-THIRD_PARTY_LICENSES.txt",
+      "kind": "file",
+      "size": 243550,
+      "sha256": "472aefe951c7db35e1657c1d13fd337140511ed6f2b329205105ad441c5a02b7"
+    },
+    {
+      "path": "Contents/_CodeSignature",
+      "kind": "directory"
+    },
+    {
+      "path": "Contents/_CodeSignature/CodeResources",
+      "kind": "file",
+      "size": 32041,
+      "sha256": "f387042f55b53872eafeb6ac37384cd73708234f022587733ddb34d1ffaccd42"
+    }
+  ]
+}

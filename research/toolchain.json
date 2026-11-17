@@ -1,0 +1,26 @@
+{
+  "source": "official GitHub release assets and authenticated release API digests",
+  "assets": [
+    {
+      "name": "ghidra_12.1.4_PUBLIC_20260921.zip",
+      "url": "https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_12.1.4_build/ghidra_12.1.4_PUBLIC_20260921.zip",
+      "sha256": "ddac49f903da9d5bac833e5cc79395098b9c33cfd3279be5f31bd00387d2d4db",
+      "expected_root": "ghidra_12.1.4_PUBLIC",
+      "observed_sha256": "ddac49f903da9d5bac833e5cc79395098b9c33cfd3279be5f31bd00387d2d4db",
+      "destination": "/Volumes/FastSSD/github/my repos/Edward_Scissorhands/.tools/ghidra_12.1.4_PUBLIC"
+    },
+    {
+      "name": "OpenJDK21U-jdk_aarch64_mac_hotspot_21.0.13_9.tar.gz",
+      "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.13%2B9/OpenJDK21U-jdk_aarch64_mac_hotspot_21.0.13_9.tar.gz",
+      "sha256": "bf036b35b071bfb2f54f2c0af8ee8d88afa95ee6eb3dce02c0f94cfc2524d04a",
+      "expected_root": "jdk-21.0.13+9",
+      "observed_sha256": "bf036b35b071bfb2f54f2c0af8ee8d88afa95ee6eb3dce02c0f94cfc2524d04a",
+      "destination": "/Volumes/FastSSD/github/my repos/Edward_Scissorhands/.tools/jdk-21.0.13+9"
+    }
+  ],
+  "native_decompiler": {
+    "path": "/Volumes/FastSSD/github/my repos/Edward_Scissorhands/.tools/ghidra_12.1.4_PUBLIC/Ghidra/Features/Decompiler/os/mac_arm_64/decompile",
+    "sha256": "7434284fc5a6b46b3cb27ef2e8d3c4ea7f801ac1f0cca30e95eb27732c0c62f0",
+    "source": "Matching Ghidra release source; make ghidra_opt ARCH_TYPE=-arch arm64 OSDIR=mac_arm_64"
+  }
+}
